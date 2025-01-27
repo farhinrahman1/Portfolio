@@ -1,9 +1,8 @@
 import React from "react";
 import { SocialIcon } from "react-social-icons";
-import { motion } from "framer-motion";
 export default function Header() {
   return (
-    <header className="sticky bg-teal-400 top-0 flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center">
+    <header className="sticky top-0 z-50 bg-teal-400 w-full h-12 flex items-center justify-between shadow-md">
       <div className="flex flex-row items-center">
         <div className="relative group cursor-pointer">
           <SocialIcon
@@ -69,9 +68,6 @@ export default function Header() {
           bgColor="transparent"
           className="hover:bg-slate-900 rounded-s-3xl"
         />
-        <p className="font-semibold hidden md:inline-flex text-md text-gray-800">
-          Reach Out
-        </p>
       </div>
     </header>
   );
