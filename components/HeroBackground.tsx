@@ -7,7 +7,7 @@ export default function () {
     <>
       <div className="relative">
         {/* Section 1 */}
-        <div className="sticky top-0 h-screen w-screen flex flex-col items-center justify-center bg-slate-900 text-white">
+        <div className="sticky top-0 flex flex-col items-center justify-center text-black">
           <div>
             <TypeIntro />
           </div>
