@@ -2,7 +2,7 @@ import React from "react";
 import { SocialIcon } from "react-social-icons";
 export default function Header() {
   return (
-    <header className="sticky top-0 z-50 bg-teal-400 w-full h-12 flex items-center justify-between shadow-md">
+    <header className="sticky top-0 z-50 bg-teal-400 w-full h-12 flex items-center justify-between shadow-2xl">
       <div className="flex flex-row items-center">
         <div className="relative group cursor-pointer">
           <SocialIcon
