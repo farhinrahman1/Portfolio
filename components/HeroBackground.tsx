@@ -13,11 +13,8 @@ export default function () {
           </div>
         </div>
 
-        {/* Section 2 */}
-        <div className="sticky top-0 h-screen w-screen flex items-center justify-center bg-gradient-to-b from-blue-200 to-indigo-100 text-black">
+        <div className="sticky top-0  h-screen w-screen flex items-center justify-center bg-gradient-to-b from-blue-200 to-indigo-100 text-black">
           <div className="flex items-center justify-center gap-16">
-            {/* Circle */}
-
             {/* Card */}
             <div className="flex items-center justify-center">
               <PinContainer
