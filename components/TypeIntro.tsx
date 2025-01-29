@@ -26,16 +26,6 @@ export default function HeroSection() {
             />
           </div>
         </div>
-        {/* <p className="mt-3 text-base text-slate-700 dark:text-gray-300">
-          <span className="font-mono text-lg font-semibold pr-16">
-            |TURNING
-          </span>{" "}
-          <span className="font-mono text-lg font-semibold pr-16">
-            COMPLEXITY
-          </span>{" "}
-          <span className="font-mono text-lg font-semibold pr-16">INTO</span>
-          <span className="font-mono text-lg font-semibold">SIMPLICITY|</span>
-        </p> */}
         <div className="text-center">
           <h1 className="mt-2 text-3xl font-bold text-gray-800 dark:text-gray-100">
             <Typewriter
