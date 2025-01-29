@@ -3,6 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { Timeline } from "../components/timeline";
+import amazonImage from "../components/amazon.jpg";
 
 const skills = [
   "HTML & CSS",
@@ -20,8 +21,8 @@ export default function AboutPage() {
       title: "2024",
       content: (
         <div>
-          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
-            Built and launched Aceternity UI and Aceternity UI Pro from scratch
+          <p className="text-gray-300 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
+            from scratch
           </p>
           <div className="grid grid-cols-2 gap-4">
             <Image
@@ -105,29 +106,26 @@ export default function AboutPage() {
       title: "Changelog",
       content: (
         <div>
-          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-4">
-            Deployed 5 new components on Aceternity today
+          <p className="text-neutral-300 dark:text-neutral-200 text-sm md:text-sm font-normal mb-4">
+            Completed several key milestones in my learning journey:
           </p>
           <div className="mb-8">
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-              ✅ Card grid component
+            <div className="flex gap-2 items-center text-neutral-300 dark:text-neutral-300 text-sm md:text-sm">
+              ✅ Mastered HTML and CSS for building responsive and accessible
+              websites
             </div>
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-              ✅ Startup template Aceternity
+            <div className="flex gap-2 items-center text-neutral-300 dark:text-neutral-300 text-sm md:text-sm">
+              ✅ Developed a strong understanding of Tailwind CSS for rapid UI
+              development
             </div>
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-              ✅ Random file upload lol
-            </div>
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-              ✅ Himesh Reshammiya Music CD
-            </div>
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-              ✅ Salman Bhai Fan Club registrations open
+            <div className="flex gap-2 items-center text-neutral-300 dark:text-neutral-300 text-sm md:text-sm">
+              ✅ Gained experience with Git for version control and
+              collaborating on GitHub
             </div>
           </div>
           <div className="grid grid-cols-2 gap-4">
             <Image
-              src="https://assets.aceternity.com/pro/hero-sections.png"
+              src={amazonImage}
               alt="hero template"
               width={500}
               height={500}
