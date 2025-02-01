@@ -1,74 +1,58 @@
-import React from "react";
-import { SocialIcon } from "react-social-icons";
-export default function Header() {
-  return (
-    <header className="sticky top-0 z-50 bg-white border-black border w-full h-12 flex items-center justify-between shadow-2xl">
-      <div className="flex flex-row items-center">
-        <div className="relative group cursor-pointer">
-          <SocialIcon
-            url="https://www.linkedin.com/in/farhin-rahman-06510a27b/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-            fgColor="gray"
-            bgColor="transparent"
-            className="hover:bg-black rounded-e-3xl"
-          />
-          <span className="absolute left-1/2 -translate-x-1/2 bottom-[-20px] px-2 py-1 text-xs text-white bg-gray-400 opacity-0 group-hover:opacity-100 transition-opacity">
-            LinkedIn
-          </span>
-        </div>
-        <div className="relative group cursor-pointer">
-          <SocialIcon
-            url="https://www.facebook.com/farhin.rahman.169"
-            fgColor="gray"
-            bgColor="transparent"
-            className="hover:bg-black rounded-e-3xl"
-          />
-          <span className="absolute left-1/2 -translate-x-1/2 bottom-[-20px] px-2 py-1 text-xs text-white bg-gray-400 opacity-0 group-hover:opacity-100 transition-opacity">
-            Facebook
-          </span>
-        </div>
-        <div className="relative group cursor-pointer">
-          <SocialIcon
-            url="https://github.com/farhinrahman1"
-            fgColor="gray"
-            bgColor="transparent"
-            className="hover:bg-black rounded-e-3xl"
-          />
-          <span className="absolute left-1/2 -translate-x-1/2 bottom-[-20px] px-2 py-1 text-xs text-white bg-gray-400 opacity-0 group-hover:opacity-100 transition-opacity">
-            Github
-          </span>
-        </div>
-        <div className="relative group cursor-pointer">
-          <SocialIcon
-            url="https://x.com/farhinrahman_"
-            fgColor="gray"
-            bgColor="transparent"
-            className="hover:bg-black rounded-e-3xl"
-          />
-          <span className="absolute left-1/2 -translate-x-1/2 bottom-[-20px] px-2 py-1 text-xs text-white bg-gray-400 opacity-0 group-hover:opacity-100 transition-opacity">
-            X
-          </span>
-        </div>
-        <div className="relative group cursor-pointer">
-          <SocialIcon
-            url="https://www.instagram.com/f_a_e_f_i_n?igsh=MW5xbzF3bXpyNnBlaw=="
-            fgColor="gray"
-            bgColor="transparent"
-            className="hover:bg-black rounded-e-3xl"
-          />
-          <span className="absolute left-1/2 -translate-x-1/2 bottom-[-20px] px-2 py-1 text-xs text-white bg-gray-400 opacity-0 group-hover:opacity-100 transition-opacity">
-            Instagram
-          </span>
-        </div>
-      </div>
+"use client";
 
-      <div className="flex flex-row items-center text-gray-300 cursor-pointer">
-        <SocialIcon
-          url="https://email.com/in/couetilc"
-          fgColor="gray"
-          bgColor="transparent"
-          className="hover:bg-black rounded-s-3xl"
-        />
-      </div>
+import Link from "next/link";
+import { motion } from "framer-motion";
+import {
+  Home,
+  Linkedin,
+  Facebook,
+  Instagram,
+  Twitter,
+  Mail,
+} from "lucide-react";
+
+const socialIcons = [
+  { Icon: Home, href: "/", label: "Home" },
+  {
+    Icon: Linkedin,
+    href: "https://linkedin.com/in/yourusername",
+    label: "LinkedIn",
+  },
+  {
+    Icon: Facebook,
+    href: "https://facebook.com/yourusername",
+    label: "Facebook",
+  },
+  {
+    Icon: Instagram,
+    href: "https://instagram.com/yourusername",
+    label: "Instagram",
+  },
+  { Icon: Twitter, href: "https://twitter.com/yourusername", label: "Twitter" },
+  { Icon: Mail, href: "mailto:your.email@example.com", label: "Email" },
+];
+
+const Header = () => {
+  return (
+    <header className="bg-black text-white py-4 fixed w-full top-0 z-50">
+      <nav className="container mx-auto px-4">
+        <ul className="flex justify-center space-x-6">
+          {socialIcons.map(({ Icon, href, label }) => (
+            <motion.li
+              key={label}
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <Link href={href} className="block">
+                <Icon className="w-6 h-6 hover:text-gray-300 transition-colors duration-200" />
+                <span className="sr-only">{label}</span>
+              </Link>
+            </motion.li>
+          ))}
+        </ul>
+      </nav>
     </header>
   );
-}
+};
+
+export default Header;

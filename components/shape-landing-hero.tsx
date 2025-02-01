@@ -4,6 +4,7 @@ import { motion, useMotionValue, useTransform, animate } from "framer-motion";
 import { Circle } from "lucide-react";
 import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
+import farhinImage from "../components/farhin1.jpg";
 
 function ElegantShape({
   className,
@@ -72,9 +73,9 @@ function ElegantShape({
 }
 
 function HeroGeometric({
-  badge = "Design Collective",
-  title1 = "Elevate Your Digital Vision",
-  title2 = "Crafting Exceptional Websites",
+  // badge = "Kokonut UI",
+  // title1 = "Farhin Rahman",
+  title2 = "Farhin Rahman",
 }: {
   badge?: string;
   title1?: string;
@@ -153,8 +154,15 @@ function HeroGeometric({
             animate="visible"
             className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/[0.03] border border-white/[0.08] mb-8 md:mb-12"
           >
-            <Circle className="h-2 w-2 fill-rose-500/80" />
-            <span className="text-sm text-white/60 tracking-wide">{badge}</span>
+            <span className="text-sm text-white/60 tracking-wide">
+              <div className=" rounded-full shadow-xl">
+                <img
+                  src={farhinImage.src}
+                  alt="Farhin"
+                  className="h-[130px] w-[130px] max-w-full border-2 border-white rounded-full shadow-lg object-cover"
+                />
+              </div>
+            </span>
           </motion.div>
 
           <motion.div
@@ -163,18 +171,16 @@ function HeroGeometric({
             initial="hidden"
             animate="visible"
           >
-            <h1 className="text-4xl sm:text-6xl md:text-8xl font-bold mb-6 md:mb-8 tracking-tight">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 md:mb-8 tracking-tight">
               <span className="bg-clip-text text-transparent bg-gradient-to-b from-white to-white/80">
-                {title1}
+                Farhin Rahman
               </span>
               <br />
               <span
                 className={cn(
                   "bg-clip-text text-transparent bg-gradient-to-r from-indigo-300 via-white/90 to-rose-300 "
                 )}
-              >
-                {title2}
-              </span>
+              ></span>
             </h1>
           </motion.div>
 
