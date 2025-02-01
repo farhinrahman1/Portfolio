@@ -1,7 +1,7 @@
 import React from "react";
 import { Typewriter } from "react-simple-typewriter";
 import farhinImage from "../components/farhin1.jpg";
-import { BackgroundBeamsWithCollision } from "../components/background-beams-with-collision";
+import { HeroGeometric } from "../components/shape-landing-hero";
 
 export default function HeroSection() {
   const handleType = (count: number) => {
@@ -12,9 +12,11 @@ export default function HeroSection() {
   };
   return (
     <div className="relative h-screen w-screen bg-gray-50 dark:bg-neutral-900 overflow-hidden">
-      <div className="absolute inset-0 z-0">
-        <BackgroundBeamsWithCollision />
-      </div>
+      <HeroGeometric
+        badge="Kokonut UI"
+        title1="Elevate Your"
+        title2="Digital Vision"
+      />
 
       <div className="relative z-10 flex flex-col items-center justify-center h-full">
         <div className="flex items-center justify-center mb-4">
