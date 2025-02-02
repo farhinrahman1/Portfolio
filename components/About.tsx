@@ -189,7 +189,7 @@ export default function AboutPage() {
   return (
     <div className="relative min-h-screen bg-gradient-to-b from-black to-gray-900 overflow-hidden flex flex-col items-center px-2">
       {/* Skills Section */}
-      <h3 className="text-2xl font-extrabold mt-14 text-white mb-4 tracking-wide">
+      <h3 className="text-4xl font-extrabold mt-14 text-white mb-4 tracking-wide">
         My Skills
       </h3>
       {/* Scrolling Skills Container */}
@@ -203,8 +203,8 @@ export default function AboutPage() {
           {[...skills, ...skills].map((skill, index) => (
             <div
               key={index}
-              className="px-4 py-2 min-w-[170px] text-base font-semibold text-white uppercase tracking-wide 
-                bg-white/10 backdrop-blur-lg border border-white/20 shadow-xl 
+              className="px-4 py-2 min-w-[170px] text-lg font-semibold text-white uppercase tracking-wide 
+                bg-neutral-900 backdrop-blur-lg border border-black shadow-xl 
                 rounded-full flex items-center justify-center transition-transform duration-300 hover:scale-105"
             >
               {skill}
