@@ -9,6 +9,7 @@ import {
   Instagram,
   Twitter,
   Mail,
+  Github,
 } from "lucide-react";
 import ContactForm from "../components/ContactForm";
 import {
@@ -31,9 +32,9 @@ const socialIcons = [
     label: "Facebook",
   },
   {
-    Icon: Instagram,
-    href: "https://instagram.com/f_a_e_f_i_n",
-    label: "Instagram",
+    Icon: Github,
+    href: "https://github.com/farhinrahman1",
+    label: "GitHub",
   },
   {
     Icon: Twitter,
