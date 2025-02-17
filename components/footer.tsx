@@ -11,7 +11,7 @@ const Footer = () => {
             className="text-4xl font-bold text-white dark:text-white"
             words={["Frontend", "Developer"]}
           />
-          <div className="flex space-x-4">
+          {/* <div className="flex space-x-4">
             <Link
               href="https://github.com/farhinrahman1"
               className="text-white hover:text-gray-400 transition-colors"
@@ -48,45 +48,9 @@ const Footer = () => {
               <Mail size={30} />
               <span className="sr-only">Email</span>
             </Link>
-          </div>
+          </div> */}
         </div>
-        {/* <div className="space-y-4">
-          <h3 className="text-lg font-semibold text-gray-800">Quick Links</h3>
-          <ul className="space-y-2 text-sm">
-            <li>
-              <Link
-                href="/about"
-                className="hover:text-gray-800 transition-colors"
-              >
-                About Me
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/projects"
-                className="hover:text-gray-800 transition-colors"
-              >
-                Projects
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/skills"
-                className="hover:text-gray-800 transition-colors"
-              >
-                Skills
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/contact"
-                className="hover:text-gray-800 transition-colors"
-              >
-                Contact
-              </Link>
-            </li>
-          </ul>
-        </div> */}
+
         <div className="space-y-4">
           <h3 className="text-2xl font-semibold text-white">Get in Touch</h3>
           <p className="text-base">

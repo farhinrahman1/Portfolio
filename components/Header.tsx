@@ -20,7 +20,7 @@ import {
 } from "@/components/ui/dialog";
 
 const socialIcons = [
-  { Icon: Home, href: "/", label: "Home" },
+  // { Icon: Home, href: "/", label: "Home" },
   {
     Icon: Linkedin,
     href: "https://linkedin.com/in/farhin-rahman00",
@@ -54,7 +54,7 @@ const Header = () => {
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
             >
-              <Link href={href} className="block">
+              <Link href={href} className="block" target="_blank">
                 <Icon className="w-6 h-6 hover:text-gray-300 transition-colors duration-200" />
                 <span className="sr-only">{label}</span>
               </Link>
