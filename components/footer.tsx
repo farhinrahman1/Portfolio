@@ -11,44 +11,6 @@ const Footer = () => {
             className="text-4xl font-bold text-white dark:text-white"
             words={["Frontend", "Developer"]}
           />
-          {/* <div className="flex space-x-4">
-            <Link
-              href="https://github.com/farhinrahman1"
-              className="text-white hover:text-gray-400 transition-colors"
-            >
-              <Github size={30} />
-              <span className="sr-only">GitHub</span>
-            </Link>
-            <Link
-              href="https://linkedin.com/in/farhin-rahman00"
-              className="text-white hover:text-gray-400 transition-colors"
-            >
-              <Linkedin size={30} />
-              <span className="sr-only">LinkedIn</span>
-            </Link>
-            <Link
-              href="https://facebook.com/in/farhin.rahman.169"
-              className="text-white hover:text-gray-400 transition-colors"
-            >
-              <Facebook size={30} />
-              <span className="sr-only">Facebook</span>
-            </Link>
-
-            <Link
-              href="https://twitter.com/farhinrahman_"
-              className="text-white hover:text-gray-400 transition-colors"
-            >
-              <Twitter size={30} />
-              <span className="sr-only">Twitter</span>
-            </Link>
-            <Link
-              href="mailto:farhinrahmanp@gmail.com"
-              className="text-white hover:text-gray-400 transition-colors"
-            >
-              <Mail size={30} />
-              <span className="sr-only">Email</span>
-            </Link>
-          </div> */}
         </div>
 
         <div className="space-y-4">
