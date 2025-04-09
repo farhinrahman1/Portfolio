@@ -1,6 +1,8 @@
 import React from "react";
 import TypeIntro from "./TypeIntro";
 import { PinContainer } from "./3d-pin";
+import { motion } from "framer-motion";
+import farhinImage from "../components/farhin1.jpg";
 
 export default function () {
   return (
@@ -10,13 +12,18 @@ export default function () {
           <TypeIntro />
         </div>
         <div className="sticky top-0 h-screen w-screen flex items-center justify-center bg-neutral-950 text-black">
+          <motion.img
+            src={farhinImage.src}
+            alt="Farhin"
+            className="h-[300px] w-[250px] max-w-full rounded-sm shadow-lg object-cover "
+          />
           <div className="flex flex-col md:flex-row items-center justify-center mb-24 gap-4 md:gap-10 px-2 py-12">
             <div className=" w-full md:w-1/2">
               <div className="max-w-full md:max-w-3xl mx-auto dark:bg-neutral-800 rounded-lg md:mb-0">
-                <h2 className="text-2xl font-bold text-gray-300 mb-4">
-                  About Me
+                <h2 className="text-2xl font-bold text-gray-300">
+                  Here is a little background
                 </h2>
-                <p className="text-base text-gray-300 dark:text-gray-300 mb-4">
+                <p className="text-base text-gray-300 dark:text-gray-300 mt-12">
                   Hi, I'm{" "}
                   <span className="font-bold text-white">Farhin Rahman</span>, a
                   passionate Frontend Developer with over 2 years of experience
@@ -27,6 +34,9 @@ export default function () {
                   through innovative design and seamless user interfaces. When
                   I'm not coding, you can find me exploring new technologies,
                   experimenting with design.
+                  <br />
+                  I'm always eager to take on new challenges and grow as a
+                  developer.
                 </p>
               </div>
             </div>
