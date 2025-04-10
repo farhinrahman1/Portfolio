@@ -11,7 +11,7 @@ export default function () {
         <div className="sticky top-0 flex flex-col items-center justify-center text-black h-screen">
           <TypeIntro />
         </div>
-        <div className="sticky top-0 h-screen w-screen flex items-center justify-center bg-neutral-950 text-black">
+        <div className="sticky top-0 h-screen flex items-center justify-center bg-neutral-950 text-black">
           <motion.img
             src={farhinImage.src}
             alt="Farhin"

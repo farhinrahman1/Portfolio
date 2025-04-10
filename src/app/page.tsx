@@ -7,23 +7,14 @@ export default function Home() {
   return (
     <>
       <ScrollProgress />
-      <div className="">
-        {/* <h1 className="p-10 font-bold text-2xl">
-          Hello, world! Lets build a cool porfolio!
-        </h1> */}
-
-        {/* header */}
-        <Header />
-        {/* hero */}
-        <Hero />
-        {/* about */}
-        <About />
-        {/* experience */}
-        {/* skills */}
-        {/* projects */}
-        {/* contact me */}
-        <Footer />
-      </div>
+      <Header />
+      <Hero />
+      <About />
+      {/* experience */}
+      {/* skills */}
+      {/* projects */}
+      {/* contact me */}
+      <Footer />
     </>
   );
 }
