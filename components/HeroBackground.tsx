@@ -12,11 +12,6 @@ export default function () {
           <TypeIntro />
         </div>
         <div className="sticky top-0 h-screen flex items-center justify-center bg-neutral-950 text-black">
-          {/* <motion.img
-            src={farhinImage.src}
-            alt="Farhin"
-            className="h-[300px] w-[250px] max-w-full rounded-sm shadow-lg object-cover "
-          /> */}
           <div className="flex flex-col md:flex-row items-center justify-center mb-24 gap-4 md:gap-10 px-2 py-12">
             <div className=" w-full md:w-1/2 ">
               <div className="max-w-full md:max-w-3xl mx-auto dark:bg-neutral-800 rounded-lg md:mb-0">
