@@ -19,12 +19,6 @@ const Footer = () => {
             I'm always open to new opportunities and collaborations. Feel free
             to reach out!
           </p>
-          <Link
-            href="mailto:farhinrahmanp@gmail.com"
-            className="inline-block bg-gradient-to-r from-pink-900 to-black text-white px-4 py-2 rounded-md text-sm font-medium hover:from-black hover:to-pink-900 transition-colors"
-          >
-            Send a Message
-          </Link>
         </div>
       </div>
       <div className="mt-12 text-center text-sm text-gray-400">

@@ -6,16 +6,7 @@ import { Timeline } from "../components/timeline";
 import amazonImage from "../components/amazon.png";
 import twitterImage from "../components/twitter.png";
 import githubImage from "../components/github.png";
-
-const skills = [
-  "HTML & CSS",
-  "JavaScript",
-  "React",
-  "Next.js",
-  "Tailwind CSS",
-  "Git & GitHub",
-  "UI/UX Design",
-];
+import SkillsShowcase from "./skills-showcase";
 
 export default function AboutPage() {
   const data = [
@@ -187,36 +178,18 @@ export default function AboutPage() {
   ];
 
   return (
-    <div className="relative min-h-screen bg-gradient-to-b from-black to-gray-900 overflow-hidden flex flex-col items-center px-2">
-      {/* Skills Section */}
-      <h3 className="text-4xl font-extrabold mt-14 text-white mb-4 tracking-wide">
-        My Skills
-      </h3>
-      {/* Scrolling Skills Container */}
-      <div className="w-full overflow-hidden py-6">
-        <motion.div
-          className="flex space-x-8"
-          initial={{ x: "0%" }}
-          animate={{ x: "-100%" }}
-          transition={{ repeat: Infinity, duration: 8, ease: "linear" }}
-        >
-          {[...skills, ...skills].map((skill, index) => (
-            <div
-              key={index}
-              className="px-4 py-2 min-w-[170px] text-lg font-semibold text-white uppercase tracking-wide 
-                bg-neutral-900 backdrop-blur-lg border border-black shadow-xl 
-                rounded-full flex items-center justify-center transition-transform duration-300 hover:scale-105"
-            >
-              {skill}
-            </div>
-          ))}
-        </motion.div>
-      </div>
-
+    <main className="flex min-h-screen flex-col items-center justify-center p-20 bg-black ">
+      <h1 className="font-playfair text-3xl font-bold text-white tracking-tight">
+        My Expertise
+      </h1>
+      <p className="font-raleway text-zinc-400 mb-2 italic">
+        Discover my professional skillset
+      </p>
+      <SkillsShowcase />
       {/* timeline */}
       <div className="w-full">
         <Timeline data={data} />
       </div>
-    </div>
+    </main>
   );
 }
