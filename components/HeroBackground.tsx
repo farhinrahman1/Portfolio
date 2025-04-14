@@ -1,7 +1,5 @@
 import React from "react";
 import TypeIntro from "./TypeIntro";
-import { motion } from "framer-motion";
-import farhinImage from "../components/farhin1.jpg";
 import { Blockquote, BlockquoteAuthor } from "@/components/ui/blockquote";
 
 export default function () {

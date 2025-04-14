@@ -24,10 +24,10 @@ export default function SkillCard({ skill }: SkillCardProps) {
       className={`${skill.bgClass} rounded-xl p-6 shadow-2xl cursor-pointer h-full border border-gray-800 backdrop-blur-sm hover:border-gray-700 transition-all duration-300 relative overflow-hidden group`}
     >
       {/* Card corner accents */}
-      <div className="absolute top-0 left-0 w-10 h-10 border-t border-l border-white/20"></div>
-      <div className="absolute top-0 right-0 w-10 h-10 border-t border-r border-white/20"></div>
-      <div className="absolute bottom-0 left-0 w-10 h-10 border-b border-l border-white/20"></div>
-      <div className="absolute bottom-0 right-0 w-10 h-10 border-b border-r border-white/20"></div>
+      <div className="absolute top-0 left-0 w-10 h-10 border-t border-l border-white/10"></div>
+      <div className="absolute top-0 right-0 w-10 h-10 border-t border-r border-white/10"></div>
+      <div className="absolute bottom-0 left-0 w-10 h-10 border-b border-l border-white/10"></div>
+      <div className="absolute bottom-0 right-0 w-10 h-10 border-b border-r border-white/10"></div>
 
       <div className="flex items-center gap-4 mb-6 relative z-10">
         <motion.div

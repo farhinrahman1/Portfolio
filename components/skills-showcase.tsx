@@ -197,9 +197,9 @@ export default function SkillsShowcase() {
           >
             {/* Button shine effect */}
             <motion.div
-              className="absolute inset-0 bg-gradient-to-r from-transparent via-gray-200 to-transparent skew-x-[-45deg]"
+              className="absolute inset-0 bg-gradient-to-r from-transparent via-gray-400 to-transparent skew-x-[-45deg]"
               initial={{ x: "-100%" }}
-              animate={{ x: "200%" }}
+              animate={{ x: "300%" }}
               transition={{
                 repeat: Number.POSITIVE_INFINITY,
                 repeatType: "loop",
@@ -347,7 +347,7 @@ function SkillDetail({
           <Button
             variant="outline"
             onClick={onClose}
-            className="border-gray-700 text-white hover:bg-white/10 font-raleway relative overflow-hidden group"
+            className="border-gray-700 text-black font-semibold hover:bg-white/35 font-raleway relative overflow-hidden group"
           >
             <span className="relative z-10">Back to Skills</span>
             <motion.div
