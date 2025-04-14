@@ -7,6 +7,7 @@ import amazonImage from "../components/amazon.png";
 import twitterImage from "../components/twitter.png";
 import githubImage from "../components/github.png";
 import SkillsShowcase from "./skills-showcase";
+import githubImage2024 from "../components/2024-github.png";
 
 export default function AboutPage() {
   const data = [
@@ -15,12 +16,16 @@ export default function AboutPage() {
       content: (
         <div>
           <p className="text-gray-300 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
-            from scratch
+            This timeline captures my evolution as a frontend developer. With
+            tools like Shadcn UI, Framer Motion, and TypeScript, I’ve pushed my
+            creativity and skills to build polished, responsive interfaces. Each
+            milestone below reflects a step forward in code, design, and
+            passion.
           </p>
           <div className="grid grid-cols-2 gap-4">
             <Image
-              src="https://assets.aceternity.com/templates/startup-1.webp"
-              alt="startup template"
+              src={githubImage2024}
+              alt="2024 Github Image"
               width={500}
               height={500}
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"

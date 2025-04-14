@@ -38,10 +38,10 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
       ref={containerRef}
     >
       <div className="max-w-7xl mx-auto py-10 px-4 md:px-8 lg:px-10">
-        <h2 className="text-2xl font-bold mt-28 md:text-4xl mb-4 text-white dark:text-white max-w-4xl">
+        <h2 className="text-3xl font-bold mt-28 md:text-4xl mb-4 text-white dark:text-white max-w-4xl">
           Changelog from my journey
         </h2>
-        <p className="text-gray-400 dark:text-neutral-300 text-base md:text-base max-w-sm">
+        <p className="text-gray-300 dark:text-neutral-300 text-base md:text-base max-w-sm">
           I&apos;ve been working on Frontend for the past 2 years.
         </p>
       </div>
