@@ -6,7 +6,6 @@ import { Timeline } from "../components/timeline";
 import amazonImage from "../components/amazon.png";
 import twitterImage from "../components/twitter.png";
 import githubImage from "../components/github.png";
-import SkillsShowcase from "./skills-showcase";
 import githubImage2024 from "../components/2024-github.png";
 import shadcn from "../components/shadcn.png";
 import code1 from "../components/code1.png";
@@ -176,13 +175,12 @@ export default function AboutPage() {
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-center p-20 bg-black ">
-      <h1 className="font-playfair text-3xl font-bold text-white tracking-tight">
+      {/* <h1 className="font-playfair text-3xl font-bold text-white tracking-tight">
         My Expertise
       </h1>
       <p className="font-raleway text-zinc-400 mb-2 italic">
         Discover my professional skillset
-      </p>
-      <SkillsShowcase />
+      </p> */}
       {/* timeline */}
       <div className="w-full">
         <Timeline data={data} />
