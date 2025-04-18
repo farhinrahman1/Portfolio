@@ -49,27 +49,6 @@ const skills: Skill[] = [
     description:
       "Component-based UI library for building interactive web applications with reusable UI components and a virtual DOM for efficient rendering.",
     color: "#61DAFB",
-    yearStarted: 2013,
-    longDescription:
-      "React is a JavaScript library for building user interfaces, particularly single-page applications. It's used for handling the view layer in web and mobile apps. React allows you to design simple views for each state in your application, and will efficiently update and render just the right components when your data changes. Declarative views make your code more predictable and easier to debug.",
-    resources: [
-      {
-        title: "Official Documentation",
-        url: "https://reactjs.org/docs/getting-started.html",
-        type: "documentation",
-      },
-      {
-        title: "React GitHub Repository",
-        url: "https://github.com/facebook/react",
-        type: "github",
-      },
-      {
-        title: "React Tutorial",
-        url: "https://reactjs.org/tutorial/tutorial.html",
-        type: "tutorial",
-      },
-    ],
-    relatedSkills: ["javascript", "typescript", "nextjs"],
   },
   {
     id: "nextjs",
@@ -78,23 +57,6 @@ const skills: Skill[] = [
     description:
       "React framework with server-side rendering, file-based routing, and optimized performance for production-ready applications.",
     color: "#000000",
-    yearStarted: 2016,
-    longDescription:
-      "Next.js is a React framework that enables functionality such as server-side rendering and generating static websites. Next.js gives you the best developer experience with all the features you need for production: hybrid static & server rendering, TypeScript support, smart bundling, route pre-fetching, and more. No config needed.",
-    resources: [
-      {
-        title: "Learn Next.js",
-        url: "https://nextjs.org/learn",
-        type: "tutorial",
-      },
-      {
-        title: "Next.js GitHub",
-        url: "https://github.com/vercel/next.js",
-        type: "github",
-      },
-      { title: "Vercel Platform", url: "https://vercel.com", type: "website" },
-    ],
-    relatedSkills: ["react", "javascript", "typescript"],
   },
   {
     id: "typescript",
@@ -103,27 +65,6 @@ const skills: Skill[] = [
     description:
       "Strongly typed programming language that builds on JavaScript, adding static type definitions for better developer experience and code quality.",
     color: "#3178C6",
-    yearStarted: 2012,
-    longDescription:
-      "TypeScript is a strongly typed programming language that builds on JavaScript, giving you better tooling at any scale. It adds optional types to JavaScript that support tools for large-scale JavaScript applications. TypeScript helps catch errors early through a type system and enables IDEs to provide a richer environment for spotting common errors.",
-    resources: [
-      {
-        title: "TypeScript Handbook",
-        url: "https://www.typescriptlang.org/docs/handbook/intro.html",
-        type: "documentation",
-      },
-      {
-        title: "TypeScript Playground",
-        url: "https://www.typescriptlang.org/play",
-        type: "website",
-      },
-      {
-        title: "TypeScript GitHub",
-        url: "https://github.com/microsoft/TypeScript",
-        type: "github",
-      },
-    ],
-    relatedSkills: ["javascript", "react", "nodejs"],
   },
   {
     id: "javascript",
@@ -132,27 +73,6 @@ const skills: Skill[] = [
     description:
       "Dynamic programming language for web development that enables interactive web pages and is an essential part of web applications.",
     color: "#F7DF1E",
-    yearStarted: 1995,
-    longDescription:
-      "JavaScript is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions. While it is most well-known as the scripting language for Web pages, many non-browser environments also use it, such as Node.js. JavaScript is a prototype-based, multi-paradigm, single-threaded, dynamic language, supporting object-oriented, imperative, and declarative styles.",
-    resources: [
-      {
-        title: "MDN Web Docs",
-        url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
-        type: "documentation",
-      },
-      {
-        title: "JavaScript.info",
-        url: "https://javascript.info/",
-        type: "tutorial",
-      },
-      {
-        title: "ECMAScript Specification",
-        url: "https://tc39.es/ecma262/",
-        type: "documentation",
-      },
-    ],
-    relatedSkills: ["typescript", "react", "nodejs"],
   },
   {
     id: "tailwind",
@@ -161,23 +81,6 @@ const skills: Skill[] = [
     description:
       "Utility-first CSS framework for rapidly building custom designs without leaving your HTML, allowing for quick styling and consistent design.",
     color: "#06B6D4",
-    yearStarted: 2017,
-    longDescription:
-      "Tailwind CSS is a utility-first CSS framework packed with classes like flex, pt-4, text-center and rotate-90 that can be composed to build any design, directly in your markup. Instead of pre-designed components, Tailwind provides low-level utility classes that let you build completely custom designs without ever leaving your HTML.",
-    resources: [
-      {
-        title: "Tailwind Documentation",
-        url: "https://tailwindcss.com/docs",
-        type: "documentation",
-      },
-      { title: "Tailwind UI", url: "https://tailwindui.com/", type: "website" },
-      {
-        title: "Tailwind GitHub",
-        url: "https://github.com/tailwindlabs/tailwindcss",
-        type: "github",
-      },
-    ],
-    relatedSkills: ["css", "react", "nextjs"],
   },
   {
     id: "css",
@@ -186,23 +89,6 @@ const skills: Skill[] = [
     description:
       "Styling language used to describe the presentation of documents, controlling layout, colors, fonts, and responsive design.",
     color: "#1572B6",
-    yearStarted: 1996,
-    longDescription:
-      "Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML. CSS is designed to enable the separation of presentation and content, including layout, colors, and fonts. This separation improves content accessibility, provides more flexibility and control in the specification of presentation characteristics.",
-    resources: [
-      {
-        title: "MDN CSS Documentation",
-        url: "https://developer.mozilla.org/en-US/docs/Web/CSS",
-        type: "documentation",
-      },
-      { title: "CSS-Tricks", url: "https://css-tricks.com/", type: "website" },
-      {
-        title: "W3C CSS Specification",
-        url: "https://www.w3.org/Style/CSS/",
-        type: "documentation",
-      },
-    ],
-    relatedSkills: ["html", "tailwind"],
   },
   {
     id: "html",
@@ -211,27 +97,6 @@ const skills: Skill[] = [
     description:
       "Standard markup language for documents designed to be displayed in browsers, forming the foundation of web content structure.",
     color: "#E34F26",
-    yearStarted: 1993,
-    longDescription:
-      "HTML (HyperText Markup Language) is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript. HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects such as interactive forms may be embedded into the rendered page.",
-    resources: [
-      {
-        title: "MDN HTML Documentation",
-        url: "https://developer.mozilla.org/en-US/docs/Web/HTML",
-        type: "documentation",
-      },
-      {
-        title: "W3C HTML Specification",
-        url: "https://html.spec.whatwg.org/",
-        type: "documentation",
-      },
-      {
-        title: "HTML Tutorial",
-        url: "https://www.w3schools.com/html/",
-        type: "tutorial",
-      },
-    ],
-    relatedSkills: ["css", "javascript"],
   },
   {
     id: "nodejs",
@@ -240,27 +105,6 @@ const skills: Skill[] = [
     description:
       "JavaScript runtime for server-side applications and API development, allowing JavaScript to run outside the browser.",
     color: "#339933",
-    yearStarted: 2009,
-    longDescription:
-      "Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that runs on the V8 engine and executes JavaScript code outside a web browser. Node.js lets developers use JavaScript to write command line tools and for server-side scripting—running scripts server-side to produce dynamic web page content before the page is sent to the user's web browser.",
-    resources: [
-      {
-        title: "Node.js Documentation",
-        url: "https://nodejs.org/en/docs/",
-        type: "documentation",
-      },
-      {
-        title: "Node.js GitHub",
-        url: "https://github.com/nodejs/node",
-        type: "github",
-      },
-      {
-        title: "Node.js Guides",
-        url: "https://nodejs.org/en/docs/guides/",
-        type: "tutorial",
-      },
-    ],
-    relatedSkills: ["javascript", "express", "mongodb"],
   },
   {
     id: "express",
@@ -269,27 +113,6 @@ const skills: Skill[] = [
     description:
       "Fast, unopinionated web framework for Node.js applications that provides robust features for web and mobile applications.",
     color: "#000000",
-    yearStarted: 2010,
-    longDescription:
-      "Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications. It is the de facto standard server framework for Node.js. Express provides a thin layer of fundamental web application features, without obscuring Node.js features that you know and love.",
-    resources: [
-      {
-        title: "Express Documentation",
-        url: "https://expressjs.com/",
-        type: "documentation",
-      },
-      {
-        title: "Express GitHub",
-        url: "https://github.com/expressjs/express",
-        type: "github",
-      },
-      {
-        title: "Express Guide",
-        url: "https://expressjs.com/en/guide/routing.html",
-        type: "tutorial",
-      },
-    ],
-    relatedSkills: ["nodejs", "javascript", "mongodb"],
   },
   {
     id: "mongodb",
@@ -298,27 +121,6 @@ const skills: Skill[] = [
     description:
       "NoSQL document database for modern applications that stores data in flexible, JSON-like documents.",
     color: "#47A248",
-    yearStarted: 2009,
-    longDescription:
-      "MongoDB is a source-available cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with optional schemas. MongoDB is developed by MongoDB Inc. and licensed under the Server Side Public License (SSPL). MongoDB is built for modern application developers and for the cloud era.",
-    resources: [
-      {
-        title: "MongoDB Documentation",
-        url: "https://docs.mongodb.com/",
-        type: "documentation",
-      },
-      {
-        title: "MongoDB University",
-        url: "https://university.mongodb.com/",
-        type: "tutorial",
-      },
-      {
-        title: "MongoDB GitHub",
-        url: "https://github.com/mongodb/mongo",
-        type: "github",
-      },
-    ],
-    relatedSkills: ["nodejs", "express"],
   },
   {
     id: "postgresql",
@@ -327,27 +129,6 @@ const skills: Skill[] = [
     description:
       "Powerful, open-source object-relational database system with a strong reputation for reliability and data integrity.",
     color: "#4169E1",
-    yearStarted: 1996,
-    longDescription:
-      "PostgreSQL is a powerful, open source object-relational database system with over 30 years of active development that has earned it a strong reputation for reliability, feature robustness, and performance. PostgreSQL comes with many features aimed to help developers build applications, administrators to protect data integrity and build fault-tolerant environments, and help you manage your data no matter how big or small the dataset.",
-    resources: [
-      {
-        title: "PostgreSQL Documentation",
-        url: "https://www.postgresql.org/docs/",
-        type: "documentation",
-      },
-      {
-        title: "PostgreSQL Tutorial",
-        url: "https://www.postgresqltutorial.com/",
-        type: "tutorial",
-      },
-      {
-        title: "PostgreSQL GitHub",
-        url: "https://github.com/postgres/postgres",
-        type: "github",
-      },
-    ],
-    relatedSkills: ["nodejs", "express"],
   },
   {
     id: "graphql",
@@ -356,47 +137,13 @@ const skills: Skill[] = [
     description:
       "Query language for APIs and a runtime for executing those queries with your existing data, providing a more efficient alternative to REST.",
     color: "#E10098",
-    yearStarted: 2015,
-    longDescription:
-      "GraphQL is a query language for APIs and a runtime for fulfilling those queries with your existing data. GraphQL provides a complete and understandable description of the data in your API, gives clients the power to ask for exactly what they need and nothing more, makes it easier to evolve APIs over time, and enables powerful developer tools.",
-    resources: [
-      {
-        title: "GraphQL Documentation",
-        url: "https://graphql.org/learn/",
-        type: "documentation",
-      },
-      {
-        title: "GraphQL GitHub",
-        url: "https://github.com/graphql/graphql-spec",
-        type: "github",
-      },
-      {
-        title: "How to GraphQL",
-        url: "https://www.howtographql.com/",
-        type: "tutorial",
-      },
-    ],
-    relatedSkills: ["nodejs", "express", "mongodb"],
   },
 ];
 
 // Simulated API integration to fetch additional skill data
 async function fetchSkillData(skillId: string): Promise<any> {
   // In a real app, this would be an actual API call
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      // Simulate fetching additional data like popularity, job listings, etc.
-      resolve({
-        popularity: Math.floor(Math.random() * 100),
-        jobListings: Math.floor(Math.random() * 10000) + 5000,
-        averageSalary: `$${Math.floor(Math.random() * 50) + 70}k - $${
-          Math.floor(Math.random() * 50) + 100
-        }k`,
-        githubStars: Math.floor(Math.random() * 100000) + 10000,
-        trending: Math.random() > 0.5,
-      });
-    }, 500);
-  });
+  return new Promise((resolve) => {});
 }
 
 // Modal component for skill details
@@ -452,7 +199,7 @@ function SkillDetailModal({
                 borderBottom: `3px solid ${skill.color}`,
               }}
             >
-              <motion.div
+              {/* <motion.div
                 className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent"
                 initial={{ x: "-100%" }}
                 animate={{ x: "100%" }}
@@ -462,9 +209,9 @@ function SkillDetailModal({
                   repeat: Number.POSITIVE_INFINITY,
                   repeatDelay: 0.5,
                 }}
-              />
+              /> */}
 
-              <div className="flex items-center gap-4 relative z-10">
+              {/* <div className="flex items-center gap-4 relative z-10">
                 <div
                   className="p-3 rounded-lg"
                   style={{ backgroundColor: `${skill.color}20` }}
@@ -478,22 +225,7 @@ function SkillDetailModal({
                     />
                   )}
                 </div>
-                <div>
-                  <h2 className="text-2xl font-bold text-white">
-                    {skill.name}
-                  </h2>
-                  <div className="flex items-center gap-2 mt-1">
-                    <span className="text-sm uppercase tracking-wider text-gray-400">
-                      {skill.category}
-                    </span>
-                    {skill.yearStarted && (
-                      <span className="text-sm text-gray-400 flex items-center gap-1">
-                        <Clock className="w-3 h-3" /> Since {skill.yearStarted}
-                      </span>
-                    )}
-                  </div>
-                </div>
-              </div>
+              </div> */}
 
               <button
                 className="absolute top-4 right-4 p-2 rounded-full bg-gray-800/50 hover:bg-gray-700/50 text-gray-400 hover:text-white transition-colors"
@@ -504,129 +236,13 @@ function SkillDetailModal({
             </div>
 
             {/* Content */}
-            <div className="p-6 overflow-y-auto max-h-[calc(90vh-100px)]">
+            {/* <div className="p-6 overflow-y-auto max-h-[calc(90vh-100px)]">
               <div className="prose prose-invert max-w-none">
                 <p className="text-gray-300 mb-6">
                   {skill.longDescription || skill.description}
                 </p>
-
-                {/* Market data section */}
-                {loading ? (
-                  <div className="bg-gray-800/50 rounded-lg p-4 mb-6">
-                    <p className="text-gray-400 text-center">
-                      Loading market data...
-                    </p>
-                  </div>
-                ) : (
-                  additionalData && (
-                    <div className="bg-gray-800/50 rounded-lg p-4 mb-6">
-                      <h3 className="text-lg font-medium text-white mb-3">
-                        Market Data
-                      </h3>
-                      <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-                        <div>
-                          <p className="text-sm text-gray-400">Popularity</p>
-                          <p className="text-lg font-medium text-white">
-                            {additionalData.popularity}%
-                          </p>
-                        </div>
-                        <div>
-                          <p className="text-sm text-gray-400">Job Listings</p>
-                          <p className="text-lg font-medium text-white">
-                            {additionalData.jobListings.toLocaleString()}
-                          </p>
-                        </div>
-                        <div>
-                          <p className="text-sm text-gray-400">
-                            Average Salary
-                          </p>
-                          <p className="text-lg font-medium text-white">
-                            {additionalData.averageSalary}
-                          </p>
-                        </div>
-                        <div>
-                          <p className="text-sm text-gray-400">GitHub Stars</p>
-                          <p className="text-lg font-medium text-white">
-                            {additionalData.githubStars.toLocaleString()}
-                          </p>
-                        </div>
-                        <div>
-                          <p className="text-sm text-gray-400">Trending</p>
-                          <p className="text-lg font-medium text-white">
-                            {additionalData.trending ? "Yes" : "No"}
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  )
-                )}
-
-                {/* Resources */}
-                {skill.resources && skill.resources.length > 0 && (
-                  <div className="mb-6">
-                    <h3 className="text-lg font-medium text-white mb-3">
-                      Learning Resources
-                    </h3>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                      {skill.resources.map((resource, index) => (
-                        <a
-                          key={index}
-                          href={resource.url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="flex items-center gap-2 p-3 bg-gray-800/50 rounded-lg hover:bg-gray-700/50 transition-colors group"
-                        >
-                          {resource.type === "documentation" && (
-                            <Book className="w-4 h-4 text-gray-400 group-hover:text-white" />
-                          )}
-                          {resource.type === "github" && (
-                            <Github className="w-4 h-4 text-gray-400 group-hover:text-white" />
-                          )}
-                          {resource.type === "website" && (
-                            <Globe className="w-4 h-4 text-gray-400 group-hover:text-white" />
-                          )}
-                          {resource.type === "tutorial" && (
-                            <Book className="w-4 h-4 text-gray-400 group-hover:text-white" />
-                          )}
-                          <span className="text-gray-300 group-hover:text-white">
-                            {resource.title}
-                          </span>
-                        </a>
-                      ))}
-                    </div>
-                  </div>
-                )}
-
-                {/* Related Skills */}
-                {skill.relatedSkills && skill.relatedSkills.length > 0 && (
-                  <div>
-                    <h3 className="text-lg font-medium text-white mb-3">
-                      Related Skills
-                    </h3>
-                    <div className="flex flex-wrap gap-2">
-                      {skill.relatedSkills.map((relatedId) => {
-                        const relatedSkill = skills.find(
-                          (s) => s.id === relatedId
-                        );
-                        return relatedSkill ? (
-                          <span
-                            key={relatedId}
-                            className="px-3 py-1 rounded-full text-sm"
-                            style={{
-                              backgroundColor: `${relatedSkill.color}20`,
-                              color: relatedSkill.color,
-                              border: `1px solid ${relatedSkill.color}40`,
-                            }}
-                          >
-                            {relatedSkill.name}
-                          </span>
-                        ) : null;
-                      })}
-                    </div>
-                  </div>
-                )}
               </div>
-            </div>
+            </div> */}
           </motion.div>
         </motion.div>
       )}
