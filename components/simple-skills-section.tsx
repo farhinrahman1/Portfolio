@@ -1,12 +1,11 @@
 "use client";
 
-import type React from "react";
-
+import React from "react";
 import { useState, useRef } from "react";
 import { motion, AnimatePresence, useInView } from "framer-motion";
 import { Code, Server, ChevronRight, X, ExternalLink } from "lucide-react";
 import { InteractiveHoverButton } from "@/components/magicui/interactive-hover-button";
-import { ShimmerButton } from "@/components/magicui/shimmer-button";
+import { Button } from "@/components/ui/moving-border";
 
 type Skill = {
   id: string;
@@ -260,38 +259,57 @@ export default function SimpleSkillsSection() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.2 }}
               >
-                <ShimmerButton
+                {/* <Button
                   onClick={() => setActiveCategory("all")}
-                  className={`px-6 py-2 rounded-lg transition-colors shawdow-2xl ${
-                    activeCategory === "all"
-                      ? "bg-gray-700 text-white"
-                      : "bg-gray-900 text-gray-400 hover:bg-gray-800 hover:text-gray-200"
-                  }`}
+                  className="bg-white h-[50px] w-[85px] font-bold text-black border-neutral-950 dark:border-slate-800 rounded-full"
                 >
-                  <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
-                    All Skills
-                  </span>
-                </ShimmerButton>
-                <button
+                  All Skills
+                </Button>
+                <Button
                   onClick={() => setActiveCategory("frontend")}
-                  className={`px-6 py-2 rounded-lg transition-colors flex items-center gap-2 ${
-                    activeCategory === "frontend"
-                      ? "bg-gray-700 text-white"
-                      : "bg-gray-900 text-gray-400 hover:bg-gray-800 hover:text-gray-200"
-                  }`}
+                  className="bg-white h-[50px] w-[110px] font-bold text-black border-neutral-950 dark:border-slate-800 rounded-full"
                 >
                   <Code className="w-4 h-4" /> Frontend
-                </button>
-                <button
+                </Button>
+                <Button
                   onClick={() => setActiveCategory("backend")}
-                  className={`px-6 py-2 rounded-lg transition-colors flex items-center gap-2 ${
-                    activeCategory === "backend"
-                      ? "bg-gray-700 text-white"
-                      : "bg-gray-900 text-gray-400 hover:bg-gray-800 hover:text-gray-200"
-                  }`}
+                  className="bg-white h-[50px] w-[110px] font-bold text-black border-neutral-950 dark:border-slate-800 rounded-full"
                 >
                   <Server className="w-4 h-4" /> Backend
-                </button>
+                </Button> */}
+
+                <Button
+                  onClick={() => setActiveCategory("all")}
+                  className={`px-4 py-2 rounded-lg font-medium transition-all w-[85px] ${
+                    activeCategory === "all"
+                      ? "bg-neutral-900 text-white"
+                      : "bg-neutral-300 text-black"
+                  }`}
+                >
+                  All Skills
+                </Button>
+
+                <Button
+                  onClick={() => setActiveCategory("frontend")}
+                  className={`px-4 py-2 rounded-lg font-medium transition-all w-[110px] ${
+                    activeCategory === "frontend"
+                      ? "bg-neutral-900 text-white"
+                      : "bg-neutral-300 text-black"
+                  }`}
+                >
+                  <Code className="w-4 h-4 mr-1" /> Frontend
+                </Button>
+
+                <Button
+                  onClick={() => setActiveCategory("backend")}
+                  className={`px-4 py-2 rounded-lg font-medium transition-all w-[110px] ${
+                    activeCategory === "backend"
+                      ? "bg-neutral-900 text-white"
+                      : "bg-neutral-300 text-black"
+                  }`}
+                >
+                  <Server className="w-4 h-4 mr-1" /> Backend
+                </Button>
               </motion.div>
 
               {/* Skills display */}
