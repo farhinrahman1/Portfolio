@@ -259,25 +259,6 @@ export default function SimpleSkillsSection() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.2 }}
               >
-                {/* <Button
-                  onClick={() => setActiveCategory("all")}
-                  className="bg-white h-[50px] w-[85px] font-bold text-black border-neutral-950 dark:border-slate-800 rounded-full"
-                >
-                  All Skills
-                </Button>
-                <Button
-                  onClick={() => setActiveCategory("frontend")}
-                  className="bg-white h-[50px] w-[110px] font-bold text-black border-neutral-950 dark:border-slate-800 rounded-full"
-                >
-                  <Code className="w-4 h-4" /> Frontend
-                </Button>
-                <Button
-                  onClick={() => setActiveCategory("backend")}
-                  className="bg-white h-[50px] w-[110px] font-bold text-black border-neutral-950 dark:border-slate-800 rounded-full"
-                >
-                  <Server className="w-4 h-4" /> Backend
-                </Button> */}
-
                 <Button
                   onClick={() => setActiveCategory("all")}
                   className={`px-4 py-2 rounded-lg font-medium transition-all w-[85px] ${

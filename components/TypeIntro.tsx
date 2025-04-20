@@ -20,7 +20,7 @@ export default function HeroSection() {
       <div className="relative z-10 flex flex-col items-center justify-center h-full">
         <div className="flex items-center justify-center mb-4"></div>
         <div className="text-center">
-          <h1 className="mt-2 text-3xl font-bold text-gray-800 dark:text-gray-100">
+          {/* <h1 className="mt-2 text-3xl font-bold text-gray-800 dark:text-gray-100">
             <Typewriter
               words={["Hi, I'm Farhin", "<Frontend Developer/>"]}
               loop={10}
@@ -32,10 +32,10 @@ export default function HeroSection() {
               onLoopDone={handleDone}
               onType={handleType}
             />
-          </h1>
-          <p className="text-lg text-gray-800 font-medium dark:text-gray-300 mt-4">
+          </h1> */}
+          {/* <p className="text-lg text-gray-800 font-medium dark:text-gray-300 mt-4">
             Dedicated to creating intuitive and dynamic user interfaces.
-          </p>
+          </p> */}
         </div>
       </div>
     </div>

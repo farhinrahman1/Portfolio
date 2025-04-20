@@ -11,7 +11,19 @@ module.exports = {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
-  		},
+		  },
+		  fontFamily: {
+			  mono: ['var(--font-mono)'],
+			  sans: ['var(--font-sans)'],
+			  serif: ['var(--font-serif)'],
+			  display: ['var(--font-display)'],
+			  roboto: ['var(--font-roboto, slab,)'],
+			  inter: ['var(--font-inter)'],
+			  poppins: ['var(--font-poppins)'],
+			  montserrat: ['var(--font-montserrat)'],
+			  sansSerif: ['var(--font-sans-serif)'],
+
+		  },
   		colors: {
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
