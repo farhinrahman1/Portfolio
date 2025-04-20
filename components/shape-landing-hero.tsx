@@ -147,7 +147,7 @@ function HeroGeometric({
 
       <div className="relative z-10 container mx-auto px-4 md:px-6">
         <div className="max-w-3xl mx-auto text-center">
-          <motion.div
+          {/* <motion.div
             custom={0}
             variants={fadeUpVariants}
             initial="hidden"
@@ -163,7 +163,7 @@ function HeroGeometric({
                 />
               </div>
             </span>
-          </motion.div>
+          </motion.div> */}
 
           <motion.div
             custom={1}
