@@ -4,6 +4,7 @@ import Header from "../../components/Header";
 import Hero from "../../components/Hero";
 import { ScrollProgress } from "../../components/scroll-progress";
 import SimpleSkillsSection from "../../components/simple-skills-section";
+import TypeIntro from "../../components/TypeIntro";
 
 export default function Home() {
   return (
