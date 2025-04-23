@@ -12,7 +12,7 @@ export default function Home() {
       <ScrollProgress />
       <Header />
       <Hero />
-      <InteractiveAbout />
+      {/* <InteractiveAbout /> */}
       <SimpleSkillsSection />
       <About />
       <Footer />
