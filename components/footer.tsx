@@ -1,43 +1,9 @@
-// import Link from "next/link";
-// import { WordRotate } from "../components/word-rotate";
-// import { Facebook, Github, Linkedin, Mail, Twitter } from "lucide-react";
-
-// const Footer = () => {
-//   return (
-//     <footer className="bg-black text-white py-5 px-4 border-t border-gray-800">
-//       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
-//         <div className="space-y-4">
-//           <WordRotate
-//             className="text-4xl font-bold text-white dark:text-white"
-//             words={["Frontend", "Developer"]}
-//           />
-//         </div>
-
-//         <div className="space-y-4">
-//           <h3 className="text-2xl font-semibold text-white">Get in Touch</h3>
-//           <p className="text-base">
-//             I'm always open to new opportunities and collaborations. Feel free
-//             to reach out!
-//           </p>
-//         </div>
-//       </div>
-//       <div className="mt-12 text-center text-sm text-gray-400">
-//         <p>
-//           &copy; {new Date().getFullYear()} Farhin Rahman. All rights reserved.
-//         </p>
-//       </div>
-//     </footer>
-//   );
-// };
-
-// export default Footer;
-
 "use client";
 
 import { useState, useEffect } from "react";
-import Link from "next/link";
 import { motion } from "framer-motion";
 import { Github, Linkedin, Twitter, Mail, ArrowUp } from "lucide-react";
+import dynamic from "next/dynamic";
 
 export default function Footer() {
   const [visible, setVisible] = useState(false);
@@ -71,80 +37,6 @@ export default function Footer() {
           viewport={{ once: true }}
           className="grid grid-cols-1 md:grid-cols-3 gap-8"
         >
-          {/* About Section
-          <div className="space-y-4">
-            <motion.h3
-              className="text-white text-xl font-semibold"
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ delay: 0.2 }}
-              viewport={{ once: true }}
-            >
-              About Me
-            </motion.h3>
-            <motion.p
-              className="text-gray-400 max-w-md"
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ delay: 0.3 }}
-              viewport={{ once: true }}
-            >
-              I'm a passionate developer focused on creating beautiful,
-              functional, and user-friendly websites and applications.
-            </motion.p>
-          </div> */}
-          {/* Quick Links
-          <div className="space-y-4">
-            <motion.h3
-              className="text-white text-xl font-semibold"
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ delay: 0.4 }}
-              viewport={{ once: true }}
-            >
-              Quick Links
-            </motion.h3>
-            <motion.ul
-              className="space-y-2"
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ delay: 0.5 }}
-              viewport={{ once: true }}
-            >
-              <li>
-                <Link
-                  href="/"
-                  className="text-gray-400 hover:text-white transition-colors duration-300 flex items-center gap-1 w-fit"
-                >
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/projects"
-                  className="text-gray-400 hover:text-white transition-colors duration-300 flex items-center gap-1 w-fit"
-                >
-                  Projects
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/about"
-                  className="text-gray-400 hover:text-white transition-colors duration-300 flex items-center gap-1 w-fit"
-                >
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/contact"
-                  className="text-gray-400 hover:text-white transition-colors duration-300 flex items-center gap-1 w-fit"
-                >
-                  Contact
-                </Link>
-              </li>
-            </motion.ul>
-          </div> */}
           {/* Contact & Social */}
           <div className="space-y-4">
             <motion.h3

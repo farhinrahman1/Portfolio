@@ -268,12 +268,12 @@ export default function InteractiveAbout() {
 
                 <div className="relative z-10">
                   <motion.h2
-                    className="text-sm uppercase tracking-widest text-purple-400 font-medium mb-2"
+                    className="text-sm uppercase tracking-widest text-purple-300 font-medium mb-2"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ delay: 0.2, duration: 0.5 }}
                   >
-                    About Me
+                    Here's a little about me
                   </motion.h2>
 
                   <motion.h3
@@ -333,12 +333,12 @@ export default function InteractiveAbout() {
               onMouseEnter={enterButton}
               onMouseLeave={leaveInteractive}
             />
-            <MagneticButton
+            {/* <MagneticButton
               icon={<User />}
               label="Portfolio"
               onMouseEnter={enterButton}
               onMouseLeave={leaveInteractive}
-            />
+            /> */}
             <MagneticButton
               icon={<ExternalLink />}
               label="Resume"
@@ -360,7 +360,7 @@ export default function InteractiveAbout() {
             ease: "linear",
           }}
         >
-          FRONTEND DEVELOPER CREATIVE CODER DESIGNER
+          FRONTEND DEVELOPER CREATIVE CODER
         </motion.div>
       </div>
     </div>
