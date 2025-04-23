@@ -71,7 +71,7 @@ export default function Footer() {
           viewport={{ once: true }}
           className="grid grid-cols-1 md:grid-cols-3 gap-8"
         >
-          {/* About Section */}
+          {/* About Section
           <div className="space-y-4">
             <motion.h3
               className="text-white text-xl font-semibold"
@@ -92,9 +92,8 @@ export default function Footer() {
               I'm a passionate developer focused on creating beautiful,
               functional, and user-friendly websites and applications.
             </motion.p>
-          </div>
-
-          {/* Quick Links */}
+          </div> */}
+          {/* Quick Links
           <div className="space-y-4">
             <motion.h3
               className="text-white text-xl font-semibold"
@@ -145,8 +144,7 @@ export default function Footer() {
                 </Link>
               </li>
             </motion.ul>
-          </div>
-
+          </div> */}
           {/* Contact & Social */}
           <div className="space-y-4">
             <motion.h3
