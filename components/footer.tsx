@@ -11,8 +11,9 @@ import {
   ArrowUp,
 } from "lucide-react";
 import dynamic from "next/dynamic";
+const Footer = dynamic(() => import("./footer"), { ssr: false });
 
-export default function Footer() {
+export default function FooterComponent() {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
@@ -166,3 +167,5 @@ export default function Footer() {
     </footer>
   );
 }
+
+export { Footer };
