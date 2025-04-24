@@ -2,7 +2,14 @@
 
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { Github, Linkedin, Twitter, Mail, ArrowUp } from "lucide-react";
+import {
+  Github,
+  Linkedin,
+  Twitter,
+  Facebook,
+  Mail,
+  ArrowUp,
+} from "lucide-react";
 import dynamic from "next/dynamic";
 
 export default function Footer() {
@@ -46,7 +53,7 @@ export default function Footer() {
               transition={{ delay: 0.6 }}
               viewport={{ once: true }}
             >
-              Connect
+              Connect with me
             </motion.h3>
             <motion.div
               className="flex space-x-4"
@@ -86,6 +93,16 @@ export default function Footer() {
                 <span className="sr-only">Twitter</span>
               </motion.a>
               <motion.a
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-white transition-colors duration-300"
+                whileHover={{ scale: 1.1 }}
+              >
+                <Facebook size={20} />
+                <span className="sr-only">Facebook</span>
+              </motion.a>
+              <motion.a
                 href="mailto:your.email@example.com"
                 className="text-gray-400 hover:text-white transition-colors duration-300"
                 whileHover={{ scale: 1.1 }}
@@ -103,9 +120,9 @@ export default function Footer() {
             >
               <a
                 href="mailto:your.email@example.com"
-                className="hover:text-white transition-colors duration-300"
+                className="hover:text-white transition-colors duration-300 text-lg"
               >
-                your.email@example.com
+                farhinrahmanp@gmail.com
               </a>
             </motion.p>
           </div>
@@ -128,7 +145,7 @@ export default function Footer() {
           transition={{ delay: 0.9 }}
           viewport={{ once: true }}
         >
-          <p>© {currentYear} Your Name. All rights reserved.</p>
+          <p>© {currentYear} Farhin Rahman. All rights reserved.</p>
           <p className="mt-1">Built with Next.js and Tailwind CSS</p>
         </motion.div>
       </div>
