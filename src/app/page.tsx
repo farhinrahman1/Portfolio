@@ -1,19 +1,10 @@
-import { ScrollProgress } from "../../components/scroll-progress";
-import SimpleSkillsSection from "../../components/simple-skills-section";
-import Header from "../../components/Header";
-import Hero from "../../components/Hero";
-import { FooterComponent } from "../../components/footer";
-import About from "../../components/About";
+// src/app/page.tsx
+import HomeContent from "@/components/HomeContent";
 
 export default function Home() {
   return (
-    <>
-      <ScrollProgress />
-      <Header />
-      <Hero />
-      <SimpleSkillsSection />
-      <About />
-      <FooterComponent />
-    </>
+    <main>
+      <HomeContent />
+    </main>
   );
 }
