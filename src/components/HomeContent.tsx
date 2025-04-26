@@ -11,13 +11,6 @@ const FooterComponent = dynamic(() => import("../../components/footer"), {
   ssr: false,
 });
 
-const InteractiveAbout = dynamic(
-  () => import("../../components/interactive-about"),
-  {
-    ssr: false,
-  }
-);
-
 const ParticleBackground = dynamic(
   () => import("../../components/paticle-background"),
   {

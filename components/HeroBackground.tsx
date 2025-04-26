@@ -4,7 +4,12 @@ import { useRef } from "react";
 import { motion, useInView, useScroll, useTransform } from "framer-motion";
 import { Code, Lightbulb, Monitor, Palette } from "lucide-react";
 import TypeIntro from "./TypeIntro";
-import InteractiveAbout from "../components/interactive-about";
+// import InteractiveAbout from "../components/interactive-about";
+import dynamic from "next/dynamic";
+const InteractiveAbout = dynamic(
+  () => import("../components/interactive-about"),
+  { ssr: false }
+);
 
 export default function AnimatedAbout() {
   const containerRef = useRef(null);
