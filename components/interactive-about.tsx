@@ -9,6 +9,25 @@ import {
   AnimatePresence,
 } from "framer-motion";
 import { ArrowRight, ExternalLink, Mail, User } from "lucide-react";
+import dynamic from "next/dynamic";
+const MailIcon = dynamic(() => import("lucide-react").then((mod) => mod.Mail), {
+  ssr: false,
+});
+const ExternalLinkIcon = dynamic(
+  () => import("lucide-react").then((mod) => mod.ExternalLink),
+  {
+    ssr: false,
+  }
+);
+const UserIcon = dynamic(() => import("lucide-react").then((mod) => mod.User), {
+  ssr: false,
+});
+const ArrowRightIcon = dynamic(
+  () => import("lucide-react").then((mod) => mod.ArrowRight),
+  {
+    ssr: false,
+  }
+);
 
 export default function InteractiveAbout() {
   const containerRef = useRef<HTMLDivElement>(null);

@@ -2,6 +2,14 @@
 
 import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
+import dynamic from "next/dynamic";
+
+const DynamicParticleBackground = dynamic(
+  () => import("./paticle-background"),
+  {
+    ssr: false,
+  }
+);
 
 export default function ParticleBackground() {
   const canvasRef = useRef<HTMLCanvasElement>(null);

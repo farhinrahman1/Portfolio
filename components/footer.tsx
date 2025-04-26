@@ -10,8 +10,11 @@ import {
   Mail,
   ArrowUp,
 } from "lucide-react";
+
 import dynamic from "next/dynamic";
-const Footer = dynamic(() => import("./footer"), { ssr: false });
+const DynamicFooterComponent = dynamic(() => import("./footer"), {
+  ssr: false,
+});
 
 export default function FooterComponent() {
   const [visible, setVisible] = useState(false);
@@ -168,4 +171,4 @@ export default function FooterComponent() {
   );
 }
 
-export { Footer };
+export { FooterComponent };
