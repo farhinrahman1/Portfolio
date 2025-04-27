@@ -199,34 +199,6 @@ function SkillDetailModal({
                 borderBottom: `3px solid ${skill.color}`,
               }}
             >
-              {/* <motion.div
-                className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent"
-                initial={{ x: "-100%" }}
-                animate={{ x: "100%" }}
-                transition={{
-                  duration: 1.5,
-                  ease: "easeInOut",
-                  repeat: Number.POSITIVE_INFINITY,
-                  repeatDelay: 0.5,
-                }}
-              /> */}
-
-              {/* <div className="flex items-center gap-4 relative z-10">
-                <div
-                  className="p-3 rounded-lg"
-                  style={{ backgroundColor: `${skill.color}20` }}
-                >
-                  {skill.category === "frontend" ? (
-                    <Code className="w-8 h-8" style={{ color: skill.color }} />
-                  ) : (
-                    <Server
-                      className="w-8 h-8"
-                      style={{ color: skill.color }}
-                    />
-                  )}
-                </div>
-              </div> */}
-
               <button
                 className="absolute top-4 right-4 p-2 rounded-full bg-gray-800/50 hover:bg-gray-700/50 text-gray-400 hover:text-white transition-colors"
                 onClick={onClose}
@@ -234,15 +206,6 @@ function SkillDetailModal({
                 <X className="w-5 h-5" />
               </button>
             </div>
-
-            {/* Content */}
-            {/* <div className="p-6 overflow-y-auto max-h-[calc(90vh-100px)]">
-              <div className="prose prose-invert max-w-none">
-                <p className="text-gray-300 mb-6">
-                  {skill.longDescription || skill.description}
-                </p>
-              </div>
-            </div> */}
           </motion.div>
         </motion.div>
       )}
