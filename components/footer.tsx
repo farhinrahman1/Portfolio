@@ -2,14 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import {
-  Github,
-  Linkedin,
-  Twitter,
-  Facebook,
-  Mail,
-  ArrowUp,
-} from "lucide-react";
+import { Github, Linkedin, Twitter, Mail, ArrowUp } from "lucide-react";
 
 export default function FooterComponent() {
   const [visible, setVisible] = useState(false);
@@ -90,16 +83,6 @@ export default function FooterComponent() {
               >
                 <Twitter size={20} />
                 <span className="sr-only">Twitter</span>
-              </motion.a>
-              <motion.a
-                href="https://facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-400 hover:text-white transition-colors duration-300"
-                whileHover={{ scale: 1.1 }}
-              >
-                <Facebook size={20} />
-                <span className="sr-only">Facebook</span>
               </motion.a>
               <motion.a
                 href="mailto:your.email@example.com"
