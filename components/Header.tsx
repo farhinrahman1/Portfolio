@@ -136,13 +136,17 @@ const Header = () => {
               </Link>
             </motion.li>
           ))}
-          <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
+          <motion.li
+            whileHover={{ scale: 1.15 }}
+            whileTap={{ scale: 0.95 }}
+            transition={{ type: "spring", stiffness: 300 }}
+          >
             <Dialog>
               <DialogTrigger asChild>
-                <button className="block">
-                  <Mail className="w-6 h-6 hover:text-gray-300 transition-colors duration-200" />
+                <div className="flex items-center justify-center w-[30px] h-[30px] cursor-pointer">
+                  <Mail className="w-[30px] h-[30px]" />
                   <span className="sr-only">Contact</span>
-                </button>
+                </div>
               </DialogTrigger>
               <DialogContent>
                 <DialogTitle className="text-lg font-semibold mb-4">
