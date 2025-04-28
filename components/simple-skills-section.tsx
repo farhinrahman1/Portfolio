@@ -13,10 +13,26 @@ type Skill = {
   category: "frontend" | "backend";
   description: string;
   color: string;
+  icon?: React.ReactNode; // Added optional icon property
+  stars?: string; // Added optional stars property
+  github?: string; // Added optional GitHub link property
+  website?: string; // Added optional website link property
 };
 
 // Skills array with colors for each skill
 const skills: Skill[] = [
+  {
+    id: "react-library",
+    name: "React",
+    description:
+      "A JavaScript library for building user interfaces with a component-based architecture.",
+    category: "frontend",
+    icon: <Code className="h-8 w-8" />,
+    stars: "200k+",
+    github: "https://github.com/facebook/react",
+    website: "https://reactjs.org",
+    color: "bg-gradient-to-br from-gray-800 to-gray-900",
+  },
   {
     id: "react",
     name: "React",

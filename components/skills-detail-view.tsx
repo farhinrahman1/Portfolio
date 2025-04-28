@@ -8,7 +8,7 @@ type Skill = {
   id: string;
   name: string;
   level: number;
-  category: "frontend" | "backend" | "design" | "other";
+  category: "frontend" | "backend";
   relatedTo: string[];
   description: string;
 };
