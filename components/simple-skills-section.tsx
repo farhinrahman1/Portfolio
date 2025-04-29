@@ -22,24 +22,13 @@ type Skill = {
 // Skills array with colors for each skill
 const skills: Skill[] = [
   {
-    id: "react-library",
-    name: "React",
-    description:
-      "A JavaScript library for building user interfaces with a component-based architecture.",
-    category: "frontend",
-    icon: <Code className="h-8 w-8" />,
-    stars: "200k+",
-    github: "https://github.com/facebook/react",
-    website: "https://reactjs.org",
-    color: "bg-gradient-to-br from-gray-800 to-gray-900",
-  },
-  {
     id: "react",
     name: "React",
     category: "frontend",
     description:
       "Component-based UI library for building interactive web applications.",
-    color: "#61DAFB",
+    color: "white",
+    icon: <Code className="w-8 h-8" />,
   },
   {
     id: "nextjs",

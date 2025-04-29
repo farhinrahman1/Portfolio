@@ -59,7 +59,7 @@ export default function SkillsDetailView({
             exit={{ scale: 0.9, y: 20 }}
             transition={{ type: "spring", damping: 25 }}
           >
-            <div className="p-6 border-b border-gray-200 flex justify-between items-center">
+            {/* <div className="p-6 border-b border-gray-200 flex justify-between items-center">
               <h2 className="text-2xl font-bold text-gray-900">
                 All Skills & Technologies
               </h2>
@@ -70,7 +70,7 @@ export default function SkillsDetailView({
               >
                 <X className="w-5 h-5" />
               </button>
-            </div>
+            </div> */}
 
             <div className="p-4 border-b border-gray-200 bg-gray-50">
               <div className="flex flex-wrap gap-2">
@@ -104,26 +104,6 @@ export default function SkillsDetailView({
                 >
                   Backend
                 </button>
-                <button
-                  onClick={() => setFilter("design")}
-                  className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
-                    filter === "design"
-                      ? "bg-black text-white"
-                      : "bg-gray-200 text-gray-700 hover:bg-gray-300"
-                  }`}
-                >
-                  Design
-                </button>
-                <button
-                  onClick={() => setFilter("other")}
-                  className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
-                    filter === "other"
-                      ? "bg-gray-700 text-white"
-                      : "bg-gray-200 text-gray-700 hover:bg-gray-300"
-                  }`}
-                >
-                  Other
-                </button>
               </div>
             </div>
 
@@ -146,49 +126,6 @@ export default function SkillsDetailView({
                       <span className="text-sm opacity-80">
                         {skill.category}
                       </span>
-                    </div>
-                    <div className="p-4">
-                      <div className="mb-3">
-                        <div className="flex justify-between mb-1">
-                          <span className="text-sm text-gray-600">
-                            Proficiency
-                          </span>
-                          <span className="text-sm font-medium">
-                            {skill.level}%
-                          </span>
-                        </div>
-                        <div className="w-full bg-gray-200 rounded-full h-2">
-                          <div
-                            className="bg-gray-800 h-2 rounded-full"
-                            style={{ width: `${skill.level}%` }}
-                          ></div>
-                        </div>
-                      </div>
-                      <p className="text-gray-700 mb-3">{skill.description}</p>
-                      {skill.relatedTo.length > 0 && (
-                        <div>
-                          <p className="text-sm text-gray-500 mb-1">
-                            Related technologies:
-                          </p>
-                          <div className="flex flex-wrap gap-1">
-                            {skill.relatedTo.map((relatedId) => {
-                              const relatedSkill = skills.find(
-                                (s) => s.id === relatedId
-                              );
-                              return (
-                                relatedSkill && (
-                                  <span
-                                    key={relatedId}
-                                    className="inline-block px-2 py-1 bg-gray-100 text-xs rounded-full"
-                                  >
-                                    {relatedSkill.name}
-                                  </span>
-                                )
-                              );
-                            })}
-                          </div>
-                        </div>
-                      )}
                     </div>
                   </motion.div>
                 ))}
