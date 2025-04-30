@@ -187,7 +187,7 @@ export default function InteractiveAbout() {
       className="relative min-h-screen flex items-center justify-center overflow-hidden bg-neutral-950 text-white"
     >
       {/* Custom cursor */}
-      <AnimatePresence>
+      {/* <AnimatePresence>
         <motion.div
           variants={cursorVariants}
           animate={cursorVariant}
@@ -196,7 +196,7 @@ export default function InteractiveAbout() {
         >
           {cursorText && <span>{cursorText}</span>}
         </motion.div>
-      </AnimatePresence>
+      </AnimatePresence> */}
 
       {/* Particles system */}
       {particles.map((particle) => (
