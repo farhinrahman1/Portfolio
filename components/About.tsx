@@ -12,6 +12,7 @@ import code1 from "../components/code1.png";
 import figma1 from "../components/figma1.png";
 import figma2 from "../components/figma2.png";
 import dynamic from "next/dynamic";
+
 const About = dynamic(() => import("./About"), { ssr: false });
 export { About };
 
