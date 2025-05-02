@@ -48,6 +48,7 @@ export default function InteractiveAbout() {
 
   const [particles, setParticles] = useState<Particle[]>([]);
   const [isHoveringBio, setIsHoveringBio] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
 
   // Bio text that morphs between different phrases
   const bioVariants = [
@@ -84,6 +85,18 @@ export default function InteractiveAbout() {
       setCurrentBioIndex((prev) => (prev + 1) % bioVariants.length);
     }, 3000);
     return () => clearInterval(interval);
+  }, []);
+
+  useEffect(() => {
+    const addHoverListeners = () => {
+      document
+        .querySelectorAll('a, button, [data-cursor="hover"]')
+        .forEach((el) => {
+          el.addEventListener("mouseenter", () => setIsHovered(true));
+          el.addEventListener("mouseleave", () => setIsHovered(false));
+        });
+    };
+    addHoverListeners();
   }, []);
 
   // Generate particles when hovering over bio
@@ -186,18 +199,6 @@ export default function InteractiveAbout() {
       ref={containerRef}
       className="relative min-h-screen flex items-center justify-center overflow-hidden bg-neutral-950 text-white"
     >
-      {/* Custom cursor */}
-      {/* <AnimatePresence>
-        <motion.div
-          variants={cursorVariants}
-          animate={cursorVariant}
-          className="fixed top-0 left-0 rounded-full pointer-events-none z-50 flex items-center justify-center text-sm font-medium"
-          transition={{ type: "spring", damping: 25, stiffness: 150 }}
-        >
-          {cursorText && <span>{cursorText}</span>}
-        </motion.div>
-      </AnimatePresence> */}
-
       {/* Particles system */}
       {particles.map((particle) => (
         <motion.div
@@ -327,12 +328,12 @@ export default function InteractiveAbout() {
 
           {/* Magnetic buttons */}
           <div className="flex flex-wrap justify-center gap-4">
-            <MagneticButton
+            {/* <MagneticButton
               icon={<Mail />}
               label="Contact Me"
               onMouseEnter={enterButton}
               onMouseLeave={leaveInteractive}
-            />
+            /> */}
             {/* <MagneticButton
               icon={<User />}
               label="Portfolio"
