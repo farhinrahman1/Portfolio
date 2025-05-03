@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import { motion } from "framer-motion";
 import Image from "next/image";
 import { Timeline } from "../components/timeline";
 import amazonImage from "../components/amazon.png";
@@ -11,6 +10,7 @@ import shadcn from "../components/shadcn.png";
 import code1 from "../components/code1.png";
 import figma1 from "../components/figma1.png";
 import figma2 from "../components/figma2.png";
+import aceternity from "../components/aceternity.png";
 import dynamic from "next/dynamic";
 
 const About = dynamic(() => import("./About"), { ssr: false });
@@ -22,7 +22,7 @@ export default function AboutPage() {
       title: "Frontend Growth 2024",
       content: (
         <div>
-          <p className="text-gray-300 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
+          <p className="text-gray-300 dark:text-neutral-200 text-sm md:text-sm font-normal mb-8">
             This timeline captures my evolution as a frontend developer. With
             tools like Shadcn UI, Framer Motion, and TypeScript, I’ve pushed my
             creativity and skills to build polished, responsive interfaces. Each
@@ -55,34 +55,26 @@ export default function AboutPage() {
             UI and Framer Motion. TypeScript added structure to my code, while
             GitHub helped me share and manage my work efficiently.
           </p>
-          <div className="grid grid-cols-2 gap-4">
+          <div className="w-full max-w-none flex flex-col items-center justify-center px-0 space-y-6">
             <Image
               src={code1}
-              alt="code template"
-              width={500}
-              height={500}
-              className="object-contain h-36 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+              alt="Code Template"
+              className="w-screen object-contain rounded-2xl"
             />
             <Image
               src={figma1}
-              alt="figma template"
-              width={500}
-              height={500}
-              className="object-contain h-36 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+              alt="Figma Template"
+              className="w-screen object-contain rounded-2xl"
             />
             <Image
               src={figma2}
-              alt="figma template"
-              width={500}
-              height={500}
-              className="object-contain h-36 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+              alt="Figma Template"
+              className="w-screen object-contain rounded-2xl"
             />
             <Image
-              src="https://assets.aceternity.com/cards.png"
-              alt="cards template"
-              width={500}
-              height={500}
-              className="object-contain h-36 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+              src={aceternity}
+              alt="Aceternity Template"
+              className="w-screen object-contain rounded-2xl"
             />
           </div>
         </div>
@@ -145,27 +137,21 @@ export default function AboutPage() {
               </div>
             </div>
           </div>
-          <div className="grid grid-cols-2 gap-2">
+          <div className="w-full max-w-none flex flex-col items-center justify-center px-0 space-y-6">
             <Image
               src={amazonImage}
               alt="Amazon"
-              width={500}
-              height={500}
-              className="object-contain h-36 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+              className="w-screen object-contain rounded-2xl"
             />
             <Image
               src={twitterImage}
               alt="Twitter"
-              width={500}
-              height={500}
-              className="object-contain h-36 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+              className="w-screen object-contain rounded-2xl"
             />
             <Image
               src={githubImage}
               alt="Github Profile"
-              width={500}
-              height={500}
-              className="object-contain h-36 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+              className="w-screen object-contain rounded-2xl"
             />
           </div>
         </div>
@@ -175,12 +161,6 @@ export default function AboutPage() {
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-center p-20 bg-black ">
-      {/* <h1 className="font-playfair text-3xl font-bold text-white tracking-tight">
-        My Expertise
-      </h1>
-      <p className="font-raleway text-zinc-400 mb-2 italic">
-        Discover my professional skillset
-      </p> */}
       {/* timeline */}
       <div className="w-full">
         <Timeline data={data} />
