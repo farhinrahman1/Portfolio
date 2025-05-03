@@ -29,20 +29,16 @@ export default function AboutPage() {
             milestone below reflects a step forward in code, design, and
             passion.
           </p>
-          <div className="grid grid-cols-2 gap-4">
+          <div className="w-full max-w-none flex flex-col items-center justify-center px-0 space-y-6">
             <Image
               src={githubImage2024}
               alt="2024 Github Image"
-              width={500}
-              height={540}
-              className="object-contain h-36 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+              className="w-screen object-contain rounded-2xl"
             />
             <Image
               src={shadcn}
               alt="Shadcn UI"
-              width={500}
-              height={540}
-              className="object-contain h-36 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+              className="w-screen object-contain rounded-2xl"
             />
           </div>
         </div>
