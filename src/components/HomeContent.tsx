@@ -4,7 +4,7 @@ import dynamic from "next/dynamic";
 import { ScrollProgress } from "../../components/scroll-progress";
 import Header from "../../components/Header";
 import Hero from "../../components/Hero";
-import SimpleSkillsSection from "../../components/SkillsPage";
+// import SimpleSkillsSection from "../../components/SkillsPage";
 import About from "../../components/About";
 
 const FooterComponent = dynamic(() => import("../../components/footer"), {
@@ -24,7 +24,7 @@ export default function HomeContent() {
       <ScrollProgress />
       <Header />
       <Hero />
-      <SimpleSkillsSection />
+      {/* <SimpleSkillsSection /> */}
       <About />
       <ParticleBackground />
       <FooterComponent />
