@@ -156,8 +156,16 @@ function HeroGeometric({
           >
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 md:mb-8 tracking-tight">
               <div className="relative h-[200px] w-full overflow-hidden">
-                <VideoText src="https://cdn.magicui.design/ocean-small.webm">
-                  OCEAN
+                <VideoText
+                  // src="https://cdn.magicui.design/ocean-small.webm"
+                  // src="https://cdn.pixabay.com/video/2023/10/01/183107-870151708_large.mp4"
+                  src="https://media.istockphoto.com/id/2161467517/video/satisfaction-document-checklist-database-contract-checkbox-insurance-manager-technology.mp4?s=mp4-640x640-is&k=20&c=gnNqY6yOp39PT9CxuoqDlMkQtzxfHHHMi4703LZ7ZQc="
+                  fontSize={25}
+                  fontWeight="900"
+                  fontFamily="monospace"
+                  className="h-[300px] w-full"
+                >
+                  Farhin
                 </VideoText>
               </div>
             </h1>
