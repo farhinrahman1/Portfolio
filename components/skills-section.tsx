@@ -12,7 +12,7 @@ interface Skill {
   name: string;
   level: number; // 1-10 scale
   description: string;
-  yearsExperience: number;
+  // yearsExperience: number;
   link?: string;
   color: string;
 }
@@ -24,7 +24,7 @@ const frontendSkills: Skill[] = [
     level: 9,
     description:
       "Building complex UIs with hooks, context API, and advanced patterns",
-    yearsExperience: 5,
+    // yearsExperience: 5,
     link: "https://reactjs.org",
     color: "from-cyan-500 to-blue-500",
   },
@@ -32,7 +32,7 @@ const frontendSkills: Skill[] = [
     name: "Next.js",
     level: 8,
     description: "Server components, app router, and full-stack applications",
-    yearsExperience: 3,
+    // yearsExperience: 3,
     link: "https://nextjs.org",
     color: "from-slate-500 to-slate-800",
   },
@@ -40,7 +40,7 @@ const frontendSkills: Skill[] = [
     name: "TypeScript",
     level: 8,
     description: "Type-safe code with interfaces, generics, and utility types",
-    yearsExperience: 4,
+    // yearsExperience: 4,
     link: "https://www.typescriptlang.org",
     color: "from-blue-600 to-blue-800",
   },
@@ -49,7 +49,7 @@ const frontendSkills: Skill[] = [
     level: 9,
     description:
       "Responsive designs with utility-first approach and custom configurations",
-    yearsExperience: 3,
+    // yearsExperience: 3,
     link: "https://tailwindcss.com",
     color: "from-cyan-400 to-sky-600",
   },
@@ -57,7 +57,7 @@ const frontendSkills: Skill[] = [
     name: "Framer Motion",
     level: 7,
     description: "Creating fluid animations and interactive UI elements",
-    yearsExperience: 2,
+    // yearsExperience: 2,
     link: "https://www.framer.com/motion",
     color: "from-purple-500 to-purple-800",
   },
@@ -65,7 +65,7 @@ const frontendSkills: Skill[] = [
     name: "Redux",
     level: 8,
     description: "State management with Redux Toolkit and middleware",
-    yearsExperience: 4,
+    // yearsExperience: 4,
     link: "https://redux.js.org",
     color: "from-purple-600 to-indigo-800",
   },
@@ -77,7 +77,7 @@ const backendSkills: Skill[] = [
     name: "Node.js",
     level: 8,
     description: "Building scalable APIs and microservices",
-    yearsExperience: 4,
+    // yearsExperience: 4,
     link: "https://nodejs.org",
     color: "from-green-500 to-green-700",
   },
@@ -85,7 +85,7 @@ const backendSkills: Skill[] = [
     name: "Express",
     level: 8,
     description: "RESTful API development with middleware and authentication",
-    yearsExperience: 4,
+    // yearsExperience: 4,
     link: "https://expressjs.com",
     color: "from-gray-500 to-gray-700",
   },
@@ -93,7 +93,7 @@ const backendSkills: Skill[] = [
     name: "PostgreSQL",
     level: 7,
     description: "Complex queries, indexing, and performance optimization",
-    yearsExperience: 3,
+    // yearsExperience: 3,
     link: "https://www.postgresql.org",
     color: "from-blue-500 to-cyan-700",
   },
@@ -102,7 +102,7 @@ const backendSkills: Skill[] = [
     level: 8,
     description:
       "Schema design, aggregation pipelines, and indexing strategies",
-    yearsExperience: 3,
+    // yearsExperience: 3,
     link: "https://www.mongodb.com",
     color: "from-green-600 to-emerald-800",
   },
@@ -111,7 +111,7 @@ const backendSkills: Skill[] = [
     level: 7,
     description:
       "Schema definition, resolvers, and Apollo Server implementation",
-    yearsExperience: 2,
+    // yearsExperience: 2,
     link: "https://graphql.org",
     color: "from-pink-500 to-rose-700",
   },
@@ -120,7 +120,7 @@ const backendSkills: Skill[] = [
     level: 7,
     description:
       "Containerization, multi-container applications with Docker Compose",
-    yearsExperience: 2,
+    // yearsExperience: 2,
     link: "https://www.docker.com",
     color: "from-sky-500 to-blue-700",
   },
@@ -184,10 +184,10 @@ const SkillCard = ({
                   className="h-full bg-white rounded-full"
                 />
               </div>
-              <div className="mt-2 text-xs text-white/70">
+              {/* <div className="mt-2 text-xs text-white/70">
                 {skill.yearsExperience}{" "}
                 {skill.yearsExperience === 1 ? "year" : "years"} experience
-              </div>
+              </div> */}
             </div>
 
             <p className="text-white/80 text-sm">{skill.description}</p>
@@ -233,7 +233,7 @@ export function SkillsSection() {
                 >
                   <Button
                     onClick={() => setShowSkills(true)}
-                    className="bg-gradient-to-r from-purple-500 to-pink-600 text-white px-8 py-6 rounded-full text-lg font-medium hover:shadow-glow transition-all duration-300 relative z-10"
+                    className="bg-gradient-to-r from-amber-900 to-neutral-950 text-white px-8 py-6 rounded-full text-lg font-medium hover:shadow-glow transition-all duration-300 relative z-10"
                     size="lg"
                   >
                     <span className="relative z-10">
