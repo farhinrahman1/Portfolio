@@ -95,7 +95,9 @@ const categories = ["all", "web", "mobile", "frontend", "fullstack"];
 
 export function WorkShowcase() {
   const [filter, setFilter] = useState("all");
-  const [selectedProject, setSelectedProject] = useState(null);
+  const [selectedProject, setSelectedProject] = useState<
+    null | (typeof projects)[number]
+  >(null);
 
   const filteredProjects =
     filter === "all"
@@ -213,7 +215,15 @@ export function WorkShowcase() {
   );
 }
 
-function ProjectCard({ project, onClick }) {
+type Project = (typeof projects)[number];
+
+function ProjectCard({
+  project,
+  onClick,
+}: {
+  project: Project;
+  onClick: () => void;
+}) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}

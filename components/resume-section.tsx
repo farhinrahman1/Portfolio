@@ -190,7 +190,14 @@ export function ResumeSection() {
   );
 }
 
-function ResumeCard({ title, company, period, description }) {
+interface ResumeCardProps {
+  title: string;
+  company: string;
+  period: string;
+  description: string;
+}
+
+function ResumeCard({ title, company, period, description }: ResumeCardProps) {
   return (
     <Card className="h-full overflow-hidden border-l-4 border-primary hover:shadow-lg transition-shadow">
       <CardHeader className="pb-2">
