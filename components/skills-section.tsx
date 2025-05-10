@@ -26,7 +26,7 @@ const frontendSkills: Skill[] = [
       "Building complex UIs with hooks, context API, and advanced patterns",
     // yearsExperience: 5,
     link: "https://reactjs.org",
-    color: "from-cyan-500 to-blue-500",
+    color: "from-cyan-600 to-blue-900",
   },
   {
     name: "Next.js",
@@ -34,7 +34,7 @@ const frontendSkills: Skill[] = [
     description: "Server components, app router, and full-stack applications",
     // yearsExperience: 3,
     link: "https://nextjs.org",
-    color: "from-slate-500 to-slate-800",
+    color: "from-slate-600 to-slate-900",
   },
   {
     name: "TypeScript",
@@ -233,7 +233,7 @@ export function SkillsSection() {
                 >
                   <Button
                     onClick={() => setShowSkills(true)}
-                    className="bg-gradient-to-r from-amber-900 to-neutral-950 text-white px-8 py-6 rounded-full text-lg font-medium hover:shadow-glow transition-all duration-300 relative z-10"
+                    className="bg-gradient-to-r from-amber-900 to-black text-white px-8 py-6 rounded-full text-lg font-medium hover:shadow-glow transition-all duration-300 relative z-10"
                     size="lg"
                   >
                     <span className="relative z-10">
@@ -246,14 +246,14 @@ export function SkillsSection() {
                 <TabsList className="grid w-full max-w-md grid-cols-2 bg-gray-900/80 backdrop-blur-sm p-1">
                   <TabsTrigger
                     value="frontend"
-                    className="flex items-center gap-2 data-[state=active]:bg-gradient-to-r data-[state=active]:from-purple-500 data-[state=active]:to-pink-600 data-[state=active]:text-white"
+                    className="flex items-center gap-2 data-[state=active]:bg-gradient-to-r data-[state=active]:to-amber-700 data-[state=active]:from-black data-[state=active]:text-white"
                   >
                     <Code2 size={16} />
                     <span>Frontend</span>
                   </TabsTrigger>
                   <TabsTrigger
                     value="backend"
-                    className="flex items-center gap-2 data-[state=active]:bg-gradient-to-r data-[state=active]:from-purple-500 data-[state=active]:to-pink-600 data-[state=active]:text-white"
+                    className="flex items-center gap-2 data-[state=active]:bg-gradient-to-r data-[state=active]:from-amber-700 data-[state=active]:to-black data-[state=active]:text-white"
                   >
                     <Database size={16} />
                     <span>Backend</span>
