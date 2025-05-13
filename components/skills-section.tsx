@@ -157,7 +157,7 @@ export default function SkillsSection() {
   };
 
   return (
-    <section className="py-20 bg-gradient-to-b from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800">
+    <section className="py-20 bg-black">
       <div className="container px-4 mx-auto">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
@@ -179,7 +179,7 @@ export default function SkillsSection() {
               className={cn(
                 "px-6 py-3 rounded-md text-sm font-medium transition-all duration-200",
                 activeTab === "frontend"
-                  ? "bg-white dark:bg-slate-700 shadow-sm"
+                  ? "bg-black shadow-sm"
                   : "text-muted-foreground hover:bg-slate-200 dark:hover:bg-slate-700"
               )}
             >
@@ -190,7 +190,7 @@ export default function SkillsSection() {
               className={cn(
                 "px-6 py-3 rounded-md text-sm font-medium transition-all duration-200",
                 activeTab === "backend"
-                  ? "bg-white dark:bg-slate-700 shadow-sm"
+                  ? "bg-black shadow-sm"
                   : "text-muted-foreground hover:bg-slate-200 dark:hover:bg-slate-700"
               )}
             >
@@ -216,11 +216,11 @@ export default function SkillsSection() {
                   boxShadow: "0 10px 30px rgba(0,0,0,0.1)",
                   transition: { type: "spring", stiffness: 400, damping: 10 },
                 }}
-                className="bg-white dark:bg-slate-800 rounded-xl p-6 shadow-sm border border-slate-200 dark:border-slate-700"
+                className="bg-black dark:bg-slate-800 rounded-xl p-6 shadow-sm border border-slate-200 dark:border-slate-700"
               >
                 <div className="flex items-center mb-4">
                   <div
-                    className={`${skill.color} p-3 rounded-lg text-white mr-4`}
+                    className={`${skill.color} p-3 rounded-lg text-black mr-4`}
                   >
                     {skill.icon}
                   </div>

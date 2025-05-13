@@ -15,6 +15,7 @@ import {
   GitBranch,
   ChevronDown,
 } from "lucide-react";
+import { InteractiveHoverButton } from "@/components/magicui/interactive-hover-button";
 
 type Skill = {
   id: string;
@@ -170,10 +171,7 @@ export default function SkillsRevealSection() {
   }, [activeCategory, isRevealed]);
 
   return (
-    <section
-      className="py-20 px-4 bg-gradient-to-b from-slate-50 to-white dark:from-slate-900 dark:to-slate-800"
-      ref={containerRef}
-    >
+    <section className="py-20 px-4 bg-black" ref={containerRef}>
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -181,87 +179,48 @@ export default function SkillsRevealSection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold mb-4">Skills & Expertise</h2>
-          <p className="text-slate-600 dark:text-slate-300 max-w-2xl mx-auto mb-12">
+          <h2 className="text-4xl font-bold mb-4 text-white">
+            Skills & Expertise
+          </h2>
+          <p className="text-white max-w-2xl mx-auto mb-12">
             Interactive showcase of my technical skills and expertise
           </p>
 
           {/* Animated Reveal Button */}
           {!isRevealed ? (
-            <motion.button
-              onClick={() => setIsRevealed(true)}
-              className="group relative inline-flex items-center justify-center px-8 py-4 font-bold text-white overflow-hidden rounded-full"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              {/* Background gradient with animation */}
-              <motion.div
-                className="absolute inset-0 bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 rounded-full"
-                animate={{
-                  backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
-                }}
-                transition={{
-                  duration: 5,
-                  ease: "linear",
-                  repeat: Number.POSITIVE_INFINITY,
-                }}
-                style={{ backgroundSize: "200% 200%" }}
-              />
-
-              {/* Glow effect */}
-              <motion.div
-                className="absolute inset-0 opacity-0 group-hover:opacity-30 transition-opacity duration-300"
-                style={{
-                  background:
-                    "radial-gradient(circle at center, white 0%, transparent 70%)",
-                }}
-              />
-
-              {/* Floating particles */}
-              <motion.div
-                className="absolute w-2 h-2 rounded-full bg-white/30"
-                animate={{
-                  x: [0, 10, -5, 0],
-                  y: [0, -10, 5, 0],
-                  opacity: [0, 1, 1, 0],
-                }}
-                transition={{
-                  duration: 2,
-                  repeat: Number.POSITIVE_INFINITY,
-                  repeatType: "loop",
-                }}
-              />
-              <motion.div
-                className="absolute w-2 h-2 rounded-full bg-white/30"
-                animate={{
-                  x: [0, -8, 4, 0],
-                  y: [0, 8, -4, 0],
-                  opacity: [0, 1, 1, 0],
-                }}
-                transition={{
-                  duration: 2.5,
-                  repeat: Number.POSITIVE_INFINITY,
-                  repeatType: "loop",
-                  delay: 0.5,
-                }}
-              />
-
-              {/* Button text and icon */}
-              <span className="relative z-10 mr-2">Reveal My Skills</span>
-              <motion.div
-                className="relative z-10"
-                animate={{
-                  y: [0, 3, 0],
-                }}
-                transition={{
-                  duration: 1.5,
-                  repeat: Number.POSITIVE_INFINITY,
-                  repeatType: "loop",
-                }}
+            <InteractiveHoverButton>
+              <motion.button
+                onClick={() => setIsRevealed(true)}
+                className="group relative inline-flex items-center justify-center px-8 py-4 font-bold text-xl text-black overflow-hidden rounded"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
               >
-                <ChevronDown className="h-5 w-5" />
-              </motion.div>
-            </motion.button>
+                {/* Glow effect */}
+                <motion.div
+                  className="absolute inset-0 opacity-0 group-hover:opacity-30 transition-opacity duration-300"
+                  style={{
+                    background:
+                      "radial-gradient(circle at center, white 0%, transparent 70%)",
+                  }}
+                />
+
+                {/* Button text and icon */}
+                <span className="">Reveal My Skills</span>
+                <motion.div
+                  className="relative z-10"
+                  animate={{
+                    y: [0, 3, 0],
+                  }}
+                  transition={{
+                    duration: 1.5,
+                    repeat: Number.POSITIVE_INFINITY,
+                    repeatType: "loop",
+                  }}
+                >
+                  <ChevronDown className="h-5 w-5" />
+                </motion.div>
+              </motion.button>
+            </InteractiveHoverButton>
           ) : null}
         </motion.div>
 
