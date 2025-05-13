@@ -1,293 +1,250 @@
 "use client";
 
+import type React from "react";
+
 import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { Code2, Database, ExternalLink, ChevronRight } from "lucide-react";
+import { motion } from "framer-motion";
+import {
+  Code,
+  Database,
+  Globe,
+  Layout,
+  Server,
+  Cpu,
+  Layers,
+  FileJson,
+  GitBranch,
+  Palette,
+  Figma,
+  Smartphone,
+} from "lucide-react";
 import { cn } from "@/lib/utils";
-import { Button } from "@/components/ui/button";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
-// Define skill interface
-interface Skill {
+type Skill = {
   name: string;
-  level: number; // 1-10 scale
-  description: string;
-  // yearsExperience: number;
-  link?: string;
+  icon: React.ReactNode;
   color: string;
-}
-
-// Frontend skills data
-const frontendSkills: Skill[] = [
-  {
-    name: "React",
-    level: 9,
-    description:
-      "Building complex UIs with hooks, context API, and advanced patterns",
-    // yearsExperience: 5,
-    link: "https://reactjs.org",
-    color: "from-cyan-600 to-blue-900",
-  },
-  {
-    name: "Next.js",
-    level: 8,
-    description: "Server components, app router, and full-stack applications",
-    // yearsExperience: 3,
-    link: "https://nextjs.org",
-    color: "from-slate-600 to-slate-900",
-  },
-  {
-    name: "TypeScript",
-    level: 8,
-    description: "Type-safe code with interfaces, generics, and utility types",
-    // yearsExperience: 4,
-    link: "https://www.typescriptlang.org",
-    color: "from-blue-600 to-blue-800",
-  },
-  {
-    name: "Tailwind CSS",
-    level: 9,
-    description:
-      "Responsive designs with utility-first approach and custom configurations",
-    // yearsExperience: 3,
-    link: "https://tailwindcss.com",
-    color: "from-cyan-400 to-sky-600",
-  },
-  {
-    name: "Framer Motion",
-    level: 7,
-    description: "Creating fluid animations and interactive UI elements",
-    // yearsExperience: 2,
-    link: "https://www.framer.com/motion",
-    color: "from-purple-500 to-purple-800",
-  },
-  {
-    name: "Redux",
-    level: 8,
-    description: "State management with Redux Toolkit and middleware",
-    // yearsExperience: 4,
-    link: "https://redux.js.org",
-    color: "from-purple-600 to-indigo-800",
-  },
-];
-
-// Backend skills data
-const backendSkills: Skill[] = [
-  {
-    name: "Node.js",
-    level: 8,
-    description: "Building scalable APIs and microservices",
-    // yearsExperience: 4,
-    link: "https://nodejs.org",
-    color: "from-green-500 to-green-700",
-  },
-  {
-    name: "Express",
-    level: 8,
-    description: "RESTful API development with middleware and authentication",
-    // yearsExperience: 4,
-    link: "https://expressjs.com",
-    color: "from-gray-500 to-gray-700",
-  },
-  {
-    name: "PostgreSQL",
-    level: 7,
-    description: "Complex queries, indexing, and performance optimization",
-    // yearsExperience: 3,
-    link: "https://www.postgresql.org",
-    color: "from-blue-500 to-cyan-700",
-  },
-  {
-    name: "MongoDB",
-    level: 8,
-    description:
-      "Schema design, aggregation pipelines, and indexing strategies",
-    // yearsExperience: 3,
-    link: "https://www.mongodb.com",
-    color: "from-green-600 to-emerald-800",
-  },
-  {
-    name: "GraphQL",
-    level: 7,
-    description:
-      "Schema definition, resolvers, and Apollo Server implementation",
-    // yearsExperience: 2,
-    link: "https://graphql.org",
-    color: "from-pink-500 to-rose-700",
-  },
-  {
-    name: "Docker",
-    level: 7,
-    description:
-      "Containerization, multi-container applications with Docker Compose",
-    // yearsExperience: 2,
-    link: "https://www.docker.com",
-    color: "from-sky-500 to-blue-700",
-  },
-];
-
-// Skill card component
-const SkillCard = ({
-  skill,
-  index,
-  visible,
-}: {
-  skill: Skill;
-  index: number;
-  visible: boolean;
-}) => {
-  return (
-    <AnimatePresence>
-      {visible && (
-        <motion.div
-          initial={{ opacity: 0, y: 50, scale: 0.9 }}
-          animate={{ opacity: 1, y: 0, scale: 1 }}
-          exit={{ opacity: 0, scale: 0.9 }}
-          transition={{
-            duration: 0.6,
-            delay: index * 0.1,
-            type: "spring",
-            stiffness: 100,
-          }}
-          whileHover={{
-            scale: 1.05,
-            boxShadow: "0 0 20px rgba(255, 255, 255, 0.2)",
-          }}
-          className={cn(
-            "bg-gradient-to-br rounded-xl p-6 border border-gray-800 relative overflow-hidden backdrop-blur-sm",
-            `${skill.color}`
-          )}
-        >
-          <div className="absolute inset-0 bg-black/60 backdrop-blur-sm z-0"></div>
-
-          <div className="relative z-10">
-            <div className="flex justify-between items-start mb-4">
-              <h3 className="text-xl font-bold text-white">{skill.name}</h3>
-              {skill.link && (
-                <a
-                  href={skill.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-white/70 hover:text-white transition-colors"
-                >
-                  <ExternalLink size={16} />
-                </a>
-              )}
-            </div>
-
-            <div className="mb-4">
-              <div className="w-full bg-black/50 h-2 rounded-full overflow-hidden">
-                <motion.div
-                  initial={{ width: 0 }}
-                  animate={{ width: `${skill.level * 10}%` }}
-                  transition={{ duration: 1, delay: index * 0.1 + 0.3 }}
-                  className="h-full bg-white rounded-full"
-                />
-              </div>
-              {/* <div className="mt-2 text-xs text-white/70">
-                {skill.yearsExperience}{" "}
-                {skill.yearsExperience === 1 ? "year" : "years"} experience
-              </div> */}
-            </div>
-
-            <p className="text-white/80 text-sm">{skill.description}</p>
-          </div>
-        </motion.div>
-      )}
-    </AnimatePresence>
-  );
+  level: number;
 };
 
-export function SkillsSection() {
-  const [activeTab, setActiveTab] = useState("frontend");
-  const [showSkills, setShowSkills] = useState(false);
+export default function SkillsSection() {
+  const [activeTab, setActiveTab] = useState<"frontend" | "backend">(
+    "frontend"
+  );
+
+  const frontendSkills: Skill[] = [
+    {
+      name: "HTML/CSS",
+      icon: <Layout className="h-6 w-6" />,
+      color: "bg-orange-500",
+      level: 90,
+    },
+    {
+      name: "JavaScript",
+      icon: <Code className="h-6 w-6" />,
+      color: "bg-yellow-500",
+      level: 85,
+    },
+    {
+      name: "React",
+      icon: <Globe className="h-6 w-6" />,
+      color: "bg-cyan-500",
+      level: 80,
+    },
+    {
+      name: "Next.js",
+      icon: <Layers className="h-6 w-6" />,
+      color: "bg-black",
+      level: 75,
+    },
+    {
+      name: "Tailwind CSS",
+      icon: <Palette className="h-6 w-6" />,
+      color: "bg-sky-500",
+      level: 85,
+    },
+    {
+      name: "TypeScript",
+      icon: <FileJson className="h-6 w-6" />,
+      color: "bg-blue-600",
+      level: 70,
+    },
+    {
+      name: "UI/UX Design",
+      icon: <Figma className="h-6 w-6" />,
+      color: "bg-purple-500",
+      level: 65,
+    },
+    {
+      name: "Responsive Design",
+      icon: <Smartphone className="h-6 w-6" />,
+      color: "bg-green-500",
+      level: 80,
+    },
+  ];
+
+  const backendSkills: Skill[] = [
+    {
+      name: "Node.js",
+      icon: <Server className="h-6 w-6" />,
+      color: "bg-green-600",
+      level: 75,
+    },
+    {
+      name: "Express",
+      icon: <Server className="h-6 w-6" />,
+      color: "bg-gray-600",
+      level: 70,
+    },
+    {
+      name: "MongoDB",
+      icon: <Database className="h-6 w-6" />,
+      color: "bg-green-700",
+      level: 65,
+    },
+    {
+      name: "PostgreSQL",
+      icon: <Database className="h-6 w-6" />,
+      color: "bg-blue-700",
+      level: 60,
+    },
+    {
+      name: "REST APIs",
+      icon: <Globe className="h-6 w-6" />,
+      color: "bg-red-500",
+      level: 80,
+    },
+    {
+      name: "GraphQL",
+      icon: <Cpu className="h-6 w-6" />,
+      color: "bg-pink-600",
+      level: 55,
+    },
+    {
+      name: "Docker",
+      icon: <Layers className="h-6 w-6" />,
+      color: "bg-sky-600",
+      level: 50,
+    },
+    {
+      name: "Git/GitHub",
+      icon: <GitBranch className="h-6 w-6" />,
+      color: "bg-orange-600",
+      level: 75,
+    },
+  ];
+
+  const container = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1,
+      },
+    },
+  };
+
+  const item = {
+    hidden: { y: 20, opacity: 0 },
+    show: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        type: "spring",
+        stiffness: 100,
+      },
+    },
+  };
 
   return (
-    <section className="py-16 px-4 bg-black min-h-screen flex items-center relative overflow-hidden">
-      <div className="max-w-6xl mx-auto w-full relative z-10">
+    <section className="py-20 bg-gradient-to-b from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800">
+      <div className="container px-4 mx-auto">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-center mb-12"
+          className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-5xl font-bold mb-4 text-white bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600">
-            Technical Skills
-          </h2>
-          <p className="text-gray-400 max-w-2xl mx-auto mb-8">
-            A comprehensive overview of my technical expertise across frontend
-            and backend technologies.
+          <h2 className="text-4xl font-bold mb-4">My Skills</h2>
+          <p className="text-muted-foreground max-w-2xl mx-auto">
+            A showcase of my technical expertise and proficiency in various
+            technologies
           </p>
+        </motion.div>
 
-          <Tabs
-            defaultValue="frontend"
-            value={activeTab}
-            onValueChange={setActiveTab}
-            className="w-full"
-          >
-            <div className="flex justify-center mb-8">
-              {!showSkills ? (
-                <motion.div
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  <Button
-                    onClick={() => setShowSkills(true)}
-                    className="bg-gradient-to-r from-amber-900 to-black text-white px-8 py-6 rounded-full text-lg font-medium hover:shadow-glow transition-all duration-300 relative z-10"
-                    size="lg"
-                  >
-                    <span className="relative z-10">
-                      Reveal My Skills <ChevronRight className="ml-2 inline" />
-                    </span>
-                    <div className="absolute inset-0 rounded-full bg-black/20 backdrop-blur-sm -z-0"></div>
-                  </Button>
-                </motion.div>
-              ) : (
-                <TabsList className="grid w-full max-w-md grid-cols-2 bg-gray-900/80 backdrop-blur-sm p-1">
-                  <TabsTrigger
-                    value="frontend"
-                    className="flex items-center gap-2 data-[state=active]:bg-gradient-to-r data-[state=active]:to-amber-700 data-[state=active]:from-black data-[state=active]:text-white"
-                  >
-                    <Code2 size={16} />
-                    <span>Frontend</span>
-                  </TabsTrigger>
-                  <TabsTrigger
-                    value="backend"
-                    className="flex items-center gap-2 data-[state=active]:bg-gradient-to-r data-[state=active]:from-amber-700 data-[state=active]:to-black data-[state=active]:text-white"
-                  >
-                    <Database size={16} />
-                    <span>Backend</span>
-                  </TabsTrigger>
-                </TabsList>
+        <div className="flex justify-center mb-12">
+          <div className="inline-flex rounded-lg border border-slate-200 dark:border-slate-700 p-1 bg-slate-100 dark:bg-slate-800">
+            <button
+              onClick={() => setActiveTab("frontend")}
+              className={cn(
+                "px-6 py-3 rounded-md text-sm font-medium transition-all duration-200",
+                activeTab === "frontend"
+                  ? "bg-white dark:bg-slate-700 shadow-sm"
+                  : "text-muted-foreground hover:bg-slate-200 dark:hover:bg-slate-700"
               )}
-            </div>
+            >
+              Frontend
+            </button>
+            <button
+              onClick={() => setActiveTab("backend")}
+              className={cn(
+                "px-6 py-3 rounded-md text-sm font-medium transition-all duration-200",
+                activeTab === "backend"
+                  ? "bg-white dark:bg-slate-700 shadow-sm"
+                  : "text-muted-foreground hover:bg-slate-200 dark:hover:bg-slate-700"
+              )}
+            >
+              Backend
+            </button>
+          </div>
+        </div>
 
-            <TabsContent value="frontend" className="mt-0">
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {frontendSkills.map((skill, index) => (
-                  <SkillCard
-                    key={skill.name}
-                    skill={skill}
-                    index={index}
-                    visible={showSkills && activeTab === "frontend"}
-                  />
-                ))}
-              </div>
-            </TabsContent>
+        <motion.div
+          variants={container}
+          initial="hidden"
+          animate="show"
+          key={activeTab}
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
+        >
+          {(activeTab === "frontend" ? frontendSkills : backendSkills).map(
+            (skill, index) => (
+              <motion.div
+                key={skill.name}
+                variants={item}
+                whileHover={{
+                  scale: 1.03,
+                  boxShadow: "0 10px 30px rgba(0,0,0,0.1)",
+                  transition: { type: "spring", stiffness: 400, damping: 10 },
+                }}
+                className="bg-white dark:bg-slate-800 rounded-xl p-6 shadow-sm border border-slate-200 dark:border-slate-700"
+              >
+                <div className="flex items-center mb-4">
+                  <div
+                    className={`${skill.color} p-3 rounded-lg text-white mr-4`}
+                  >
+                    {skill.icon}
+                  </div>
+                  <h3 className="font-medium">{skill.name}</h3>
+                </div>
 
-            <TabsContent value="backend" className="mt-0">
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {backendSkills.map((skill, index) => (
-                  <SkillCard
-                    key={skill.name}
-                    skill={skill}
-                    index={index}
-                    visible={showSkills && activeTab === "backend"}
+                <div className="w-full bg-slate-200 dark:bg-slate-700 rounded-full h-2.5">
+                  <motion.div
+                    className={`${skill.color} h-2.5 rounded-full`}
+                    initial={{ width: 0 }}
+                    animate={{ width: `${skill.level}%` }}
+                    transition={{
+                      duration: 1,
+                      delay: index * 0.1,
+                      ease: "easeOut",
+                    }}
                   />
-                ))}
-              </div>
-            </TabsContent>
-          </Tabs>
+                </div>
+                <div className="mt-2 text-right text-sm text-muted-foreground">
+                  {skill.level}%
+                </div>
+              </motion.div>
+            )
+          )}
         </motion.div>
       </div>
     </section>
