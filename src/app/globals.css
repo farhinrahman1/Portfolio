@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -34,10 +34,10 @@
     --input: 214.3 31.8% 91.4%;
     --ring: 222.2 84% 4.9%;
 
-    --radius: 0.5rem;
+    --radius: 0.5rem; */
 
     /* Custom colors */
-    --burgundy-50: 346 100% 97%;
+    /* --burgundy-50: 346 100% 97%;
     --burgundy-100: 346 100% 94%;
     --burgundy-200: 346 96% 90%;
     --burgundy-300: 346 94% 82%;
@@ -48,9 +48,9 @@
     --burgundy-800: 346 70% 30%;
     --burgundy-900: 346 68% 25%;
     --burgundy-950: 346 65% 15%;
-  }
+  } */
 
-  .dark {
+  /* .dark {
     --background: 222.2 84% 4.9%;
     --foreground: 210 40% 98%;
 
@@ -92,20 +92,20 @@
 
   body {
     @apply bg-background text-foreground;
-  }
+  } */
 
   /* Custom font classes */
-  .font-playfair {
+  /* .font-playfair {
     font-family: "Playfair Display", serif;
   }
 
   .font-raleway {
     font-family: "Raleway", sans-serif;
   }
-}
+} */
 
 /* Book animation styles */
-.perspective-1200 {
+/* .perspective-1200 {
   perspective: 1200px;
 }
 
@@ -137,9 +137,9 @@
 .book-right {
   transform-origin: left center;
   border-left: 1px solid rgba(255, 255, 255, 0.1);
-}
+} */
 
-.book-content {
+/* .book-content {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -167,10 +167,10 @@
   right: auto;
   background: linear-gradient(270deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 100%);
   transform: translateX(-20px);
-}
+} */
 
 /* Book page turning effect */
-.book-page {
+/* .book-page {
   position: absolute;
   width: 50%;
   height: 100%;
@@ -190,21 +190,21 @@
   height: 100%;
   background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h100v100H0z' fill='%23ffffff' fill-opacity='0.02'/%3E%3Cpath d='M0 10h100M0 20h100M0 30h100M0 40h100M0 50h100M0 60h100M0 70h100M0 80h100M0 90h100' stroke='%23ffffff' stroke-opacity='0.03' stroke-width='0.5'/%3E%3C/svg%3E");
   background-size: 20px 20px;
-}
+} */
 
 /* Book decoration */
-.book-decoration svg {
+/* .book-decoration svg {
   opacity: 0.6;
-}
+} */
 
 /* Gold foil effect */
-.gold-foil-effect {
+/* .gold-foil-effect {
   background: linear-gradient(45deg, rgba(209, 160, 128, 0), rgba(209, 160, 128, 0.5), rgba(209, 160, 128, 0));
   background-size: 200% 200%;
   animation: shimmer 3s infinite linear;
-}
+} */
 
-@keyframes shimmer {
+/* @keyframes shimmer {
   0% {
     background-position: 0% 0%;
   }
@@ -212,10 +212,10 @@
   100% {
     background-position: 200% 200%;
   }
-}
+} */
 
 /* Background glow effects */
-.glow-spot {
+/* .glow-spot {
   position: absolute;
   border-radius: 50%;
   filter: blur(80px);
@@ -238,9 +238,9 @@
   bottom: 20%;
   right: 10%;
   animation: float 18s ease-in-out infinite alternate-reverse;
-}
+} */
 
-.glow-spot-3 {
+/* .glow-spot-3 {
   width: 200px;
   height: 200px;
   background: #f27121;
@@ -266,10 +266,10 @@
   100% {
     transform: translate(30px, 30px);
   }
-}
+} */
 
 /* Shimmer overlay */
-.shimmer-overlay {
+/* .shimmer-overlay {
   position: absolute;
   inset: 0;
   background: linear-gradient(45deg,
@@ -288,17 +288,17 @@
   100% {
     background-position: 200% 200%;
   }
-}
+} */
 
 /* Subtle grid pattern */
-.bg-grid-pattern {
+/* .bg-grid-pattern {
   background-image: linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
     linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
   background-size: 20px 20px;
-}
+} */
 
 /* Custom color utilities */
-.from-burgundy-500 {
+/* .from-burgundy-500 {
   --tw-gradient-from: hsl(var(--burgundy-500)) var(--tw-gradient-from-position);
   --tw-gradient-to: hsl(var(--burgundy-500) / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
@@ -322,9 +322,9 @@
   --tw-gradient-from: hsl(var(--burgundy-800)) var(--tw-gradient-from-position);
   --tw-gradient-to: hsl(var(--burgundy-800) / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
+} */
 
-.to-burgundy-950 {
+/* .to-burgundy-950 {
   --tw-gradient-to: hsl(var(--burgundy-950)) var(--tw-gradient-to-position);
 }
 
@@ -346,30 +346,30 @@
 
 .border-burgundy-700\/50 {
   border-color: hsl(var(--burgundy-700) / 0.5);
-}
+} */
 
 /* Card container with 3D effect */
-.card-container {
+/* .card-container {
   transform-style: preserve-3d;
   perspective: 1000px;
-}
+} */
 
 /* Grid background */
-.grid-background {
+/* .grid-background {
   background-image: linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
     linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
   background-size: 20px 20px;
   opacity: 0.2;
-}
+} */
 
 /* Noise overlay */
-.noise-overlay {
+/* .noise-overlay {
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
   opacity: 0.05;
-}
+} */
 
 /* Animation for card appearance */
-@keyframes cardAppear {
+/* @keyframes cardAppear {
   0% {
     opacity: 0;
     transform: translateY(30px);
@@ -379,10 +379,10 @@
     opacity: 1;
     transform: translateY(0);
   }
-}
+} */
 
 /* Animation for progress bars */
-@keyframes progressFill {
+/* @keyframes progressFill {
   0% {
     width: 0;
   }
@@ -390,10 +390,10 @@
   100% {
     width: 100%;
   }
-}
+} */
 
 /* Animation for shine effect */
-@keyframes shine {
+/* @keyframes shine {
   0% {
     transform: translateX(-100%) skewX(-45deg);
   }
@@ -401,9 +401,9 @@
   100% {
     transform: translateX(200%) skewX(-45deg);
   }
-}
+} */
 
-@theme inline {
+/* @theme inline {
   @keyframes shimmer-slide {
   to {
     transform: translate(calc(100cqw - 100%), 0);
@@ -422,5 +422,81 @@
   100% {
     transform: translateZ(0) rotate(360deg);
     }
+  }
+} */
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .animation-delay-700 {
+    animation-delay: 700ms;
+  }
+
+  .animation-delay-1000 {
+    animation-delay: 1000ms;
+  }
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 0 0% 3.9%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+    --accent: 0 0% 14.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 0 0% 83.1%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
   }
 }

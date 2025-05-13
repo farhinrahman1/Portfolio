@@ -4,7 +4,7 @@ import dynamic from "next/dynamic";
 import { ScrollProgress } from "../../components/scroll-progress";
 import Header from "../../components/Header";
 import Hero from "../../components/Hero";
-import SkillsSection from "../../components/skills-section";
+import SkillsSection from "../../components/skills-reveal-section";
 import About from "../../components/About";
 
 const FooterComponent = dynamic(() => import("../../components/footer"), {
