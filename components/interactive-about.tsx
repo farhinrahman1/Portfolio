@@ -429,16 +429,6 @@ function MagneticButton({
         whileHover={{ scale: 1, opacity: 1 }}
         transition={{ duration: 0.3 }}
       />
-
-      {/* Arrow indicator */}
-      <motion.div
-        className="absolute right-4 opacity-0 group-hover:opacity-100"
-        initial={{ x: -10 }}
-        whileHover={{ x: 0 }}
-        transition={{ duration: 0.2 }}
-      >
-        <ArrowRight className="size-4" />
-      </motion.div>
     </motion.button>
   );
 }

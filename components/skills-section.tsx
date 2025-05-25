@@ -159,7 +159,7 @@ export default function SkillsSection() {
   return (
     <section className="py-20 bg-black">
       <div className="container px-4 mx-auto">
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
@@ -170,7 +170,7 @@ export default function SkillsSection() {
             A showcase of my technical expertise and proficiency in various
             technologies
           </p>
-        </motion.div>
+        </motion.div> */}
 
         <div className="flex justify-center mb-12">
           <div className="inline-flex rounded-lg border border-slate-200 dark:border-slate-700 p-1 bg-slate-100 dark:bg-slate-800">

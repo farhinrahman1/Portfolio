@@ -3,7 +3,6 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 
 import { Home, Facebook, Instagram, Twitter, Mail, Github } from "lucide-react";
-import ContactForm from "../components/ContactForm";
 import {
   Dialog,
   DialogContent,
@@ -145,20 +144,6 @@ const Header = () => {
               href="mailto:farhinrahmanp@gmail.com"
               className="w-[30px] h-[30px] cursor-pointer"
             />
-            {/* <Dialog>
-              <DialogTrigger asChild>
-                <div className="flex items-center justify-center w-[30px] h-[30px] cursor-pointer">
-                  <Mail className="w-[30px] h-[30px]" />
-                  <span className="sr-only">Contact</span>
-                </div>
-              </DialogTrigger>
-              <DialogContent>
-                <DialogTitle className="text-lg font-semibold mb-4">
-                  Reach out to me
-                </DialogTitle>
-                <ContactForm />
-              </DialogContent>
-            </Dialog> */}
           </motion.li>
         </ul>
       </nav>

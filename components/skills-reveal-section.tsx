@@ -16,6 +16,7 @@ import {
   ChevronDown,
 } from "lucide-react";
 import { InteractiveHoverButton } from "@/components/magicui/interactive-hover-button";
+import { PointerHighlight } from "@/components/ui/pointer-highlight";
 
 type Skill = {
   id: string;
@@ -179,12 +180,33 @@ export default function SkillsRevealSection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold mb-4 text-white">
+          {/* <h2 className="text-4xl font-bold mb-4 text-white">
             Skills & Expertise
           </h2>
-          <p className="text-white max-w-2xl mx-auto mb-12">
-            Interactive showcase of my technical skills and expertise
-          </p>
+          <p className="text-white max-w-3xl mx-auto mb-12">
+            Interactive showcase of
+            <span>
+              <PointerHighlight>my technical skills</PointerHighlight>
+            </span>
+            and expertise
+          </p> */}
+          <div className="text-center my-24 px-4">
+            <h2 className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-yellow-200 to-yellow-900 mb-6">
+              Skills & Expertise
+            </h2>
+
+            <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-12 leading-relaxed">
+              Interactive showcase of{" "}
+              <span className="relative inline-block">
+                <PointerHighlight>
+                  <span className=" px-2 py-1 text-yellow-100 font-semibold shadow-md hover:bg-yellow-500/40 transition duration-300">
+                    my technical skills
+                  </span>
+                </PointerHighlight>
+              </span>{" "}
+              and expertise
+            </p>
+          </div>
 
           {/* Animated Reveal Button */}
           {!isRevealed ? (
