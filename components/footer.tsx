@@ -85,7 +85,7 @@ export default function FooterComponent() {
                 <span className="sr-only">Twitter</span>
               </motion.a>
               <motion.a
-                href="mailto:your.email@example.com"
+                href="mailto:farhinrahmanp@gmail.com"
                 className="text-gray-400 hover:text-white transition-colors duration-300"
                 whileHover={{ scale: 1.1 }}
               >
@@ -101,7 +101,7 @@ export default function FooterComponent() {
               viewport={{ once: true }}
             >
               <a
-                href="mailto:your.email@example.com"
+                href="mailto:farhinrahmanp@gmail.com"
                 className="hover:text-white transition-colors duration-300 text-lg"
               >
                 farhinrahmanp@gmail.com

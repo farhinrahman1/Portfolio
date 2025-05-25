@@ -141,7 +141,11 @@ const Header = () => {
             whileTap={{ scale: 0.95 }}
             transition={{ type: "spring", stiffness: 300 }}
           >
-            <Dialog>
+            <Mail
+              href="mailto:farhinrahmanp@gmail.com"
+              className="w-[30px] h-[30px] cursor-pointer"
+            />
+            {/* <Dialog>
               <DialogTrigger asChild>
                 <div className="flex items-center justify-center w-[30px] h-[30px] cursor-pointer">
                   <Mail className="w-[30px] h-[30px]" />
@@ -154,7 +158,7 @@ const Header = () => {
                 </DialogTitle>
                 <ContactForm />
               </DialogContent>
-            </Dialog>
+            </Dialog> */}
           </motion.li>
         </ul>
       </nav>
