@@ -102,7 +102,7 @@ const Pointer = ({ ...props }: React.SVGProps<SVGSVGElement>) => {
     <svg
       stroke="currentColor"
       fill="currentColor"
-      strokeWidth="1"
+      strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
       viewBox="0 0 16 16"
