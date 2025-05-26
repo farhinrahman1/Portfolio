@@ -395,7 +395,7 @@ export default function SkillsSection() {
           transition={{ duration: 0.6, delay: 0.5 }}
           className="flex justify-center mb-16"
         >
-          <div className="flex bg-gray-100 dark:bg-gray-800 rounded-2xl p-2 gap-2">
+          <div className="flex bg-gray-200 rounded-xl p-1 gap-1">
             <ToggleButton
               isActive={activeSection === "frontend"}
               onClick={() => setActiveSection("frontend")}
@@ -443,28 +443,6 @@ export default function SkillsSection() {
             </motion.div>
           </AnimatePresence>
         </div>
-
-        {/* Section indicator
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.6, delay: 0.8 }}
-          className="text-center mt-12"
-        >
-          <motion.p
-            key={activeSection}
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4 }}
-            className="text-lg text-gray-600 dark:text-gray-400"
-          >
-            {activeSection === "frontend"
-              ? "Building beautiful and interactive user interfaces"
-              : "Creating robust and scalable server-side solutions"}
-          </motion.p>
-        </motion.div> */}
-
-        {/* Floating elements */}
         <div className="absolute inset-0 pointer-events-none">
           {[...Array(8)].map((_, i) => (
             <motion.div

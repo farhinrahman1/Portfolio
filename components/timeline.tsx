@@ -1,4 +1,5 @@
 "use client";
+import { PointerHighlight } from "@/components/ui/pointer-highlight";
 import {
   useMotionValueEvent,
   useScroll,
@@ -37,11 +38,13 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
       className="w-full bg-black dark:bg-neutral-950 font-sans md:px-10"
       ref={containerRef}
     >
-      <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-10">
-        <h2 className="text-3xl font-bold mt-28 md:text-4xl mb-4 text-white dark:text-white max-w-4xl">
-          Changelog from my journey
-        </h2>
-        <p className="text-gray-300 dark:text-neutral-300 text-base md:text-base max-w-sm">
+      <div className="max-w-7xl mx-auto md:px-8 lg:px-10">
+        <PointerHighlight>
+          <span className="text-3xl px-1 py-1 text-transparent bg-gradient-to-r bg-clip-text from-yellow-500 to-yellow-950 hover:from-slate-300 hover:to-slate-800 font-semibold shadow-md hover:bg-yellow-500/40 transition duration-300">
+            Changelog from my journey
+          </span>
+        </PointerHighlight>
+        <p className="text-gray-300 text-base md:text-base max-w-sm">
           I&apos;ve been working on Frontend for the past 2 years.
         </p>
       </div>
