@@ -35,12 +35,12 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
 
   return (
     <div
-      className="w-full bg-black dark:bg-neutral-950 font-sans md:px-10"
+      className="w-full py-10 bg-black font-sans md:px-10"
       ref={containerRef}
     >
-      <div className="max-w-7xl mx-auto md:px-8 lg:px-10">
+      <div className="max-w-7xl mx-auto">
         <PointerHighlight>
-          <span className="text-3xl px-1 py-1 text-transparent bg-gradient-to-r bg-clip-text from-yellow-500 to-yellow-950 hover:from-slate-300 hover:to-slate-800 font-semibold shadow-md hover:bg-yellow-500/40 transition duration-300">
+          <span className="text-3xl text-transparent bg-gradient-to-r bg-clip-text from-yellow-500 to-yellow-950 hover:from-slate-300 hover:to-slate-800 font-semibold shadow-md hover:bg-yellow-500/40 transition duration-300">
             Changelog from my journey
           </span>
         </PointerHighlight>

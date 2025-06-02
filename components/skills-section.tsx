@@ -226,7 +226,7 @@ const SkillLogo = ({
       {/* Main logo container */}
       <motion.div
         animate={controls}
-        className="relative z-10 w-20 h-20 flex items-center justify-center text-gray-800"
+        className="relative m-3 z-10 w-16 h-16 flex items-center justify-center text-gray-800"
         whileHover={{
           filter: ["grayscale(100%)", "grayscale(0%)", "grayscale(100%)"],
           transition: { duration: 0.5 },
@@ -355,7 +355,7 @@ export default function SkillsSection() {
     activeSection === "frontend" ? frontendSkills : backendSkills;
 
   return (
-    <section className="py-20 px-4 bg-black  min-h-screen relative overflow-hidden">
+    <section className="py-10 px-4 bg-black  min-h-screen relative overflow-hidden">
       {/* Animated background grid */}
       <div className="absolute inset-0 opacity-5">
         <div
