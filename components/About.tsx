@@ -161,7 +161,6 @@ export default function AboutPage() {
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-center p-20 bg-black ">
-      {/* timeline */}
       <div className="w-full">
         <Timeline data={data} />
       </div>

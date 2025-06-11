@@ -355,7 +355,7 @@ export default function SkillsSection() {
     activeSection === "frontend" ? frontendSkills : backendSkills;
 
   return (
-    <section className="py-10 px-4 bg-black  min-h-screen relative overflow-hidden">
+    <section className="py-10 px-4 bg-black min-h-screen relative overflow-visible pb-32">
       {/* Animated background grid */}
       <div className="absolute inset-0 opacity-5">
         <div
@@ -412,13 +412,13 @@ export default function SkillsSection() {
         </motion.div>
 
         {/* Skills Grid with Sliding Animation */}
-        <div className="relative h-96 overflow-hidden">
+        <div className="relative min-h-[24rem] overflow-visible">
           <AnimatePresence mode="wait">
             <motion.div
               key={activeSection}
-              initial={{ x: 300, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              exit={{ x: -300, opacity: 0 }}
+              initial={{ x: 300, opacity: 0, position: "absolute" }}
+              animate={{ x: 0, opacity: 1, position: "relative" }}
+              exit={{ x: -300, opacity: 0, position: "absolute" }}
               transition={{
                 duration: 0.5,
                 ease: "easeInOut",

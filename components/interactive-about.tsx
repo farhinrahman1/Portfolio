@@ -221,7 +221,7 @@ export default function InteractiveAbout() {
       <motion.div
         className="absolute inset-0 opacity-30"
         style={{
-          background: `radial-gradient(circle at ${smoothMouseX.get()}px ${smoothMouseY.get()}px, rgba(79, 70, 229, 0.4) 0%, transparent 50%)`,
+          background: `radial-gradient(circle at ${smoothMouseX.get()}px ${smoothMouseY.get()}px, rgba(79, 70, 229, 0.7) 0%, transparent 50%)`,
         }}
       />
 
