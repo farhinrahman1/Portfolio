@@ -166,7 +166,7 @@ const SkillLogo = ({
   const handleHover = async () => {
     setIsHovered(true);
     await controls.start({
-      scale: [1, 1.2, 1.1],
+      scale: [1, 0.9, 1],
       rotate: [0, -10, 5, 0],
       transition: { duration: 0.6, ease: "easeInOut" },
     });
@@ -215,10 +215,10 @@ const SkillLogo = ({
     >
       {/* Floating background effect */}
       <motion.div
-        className="absolute inset-0 bg-gradient-to-br from-gray-100 to-gray-200 rounded-2xl"
+        className="absolute inset-0 bg-gray-600 rounded-xl"
         animate={{
           scale: isHovered ? 1.1 : 1,
-          opacity: isHovered ? 0.8 : 0,
+          opacity: isHovered ? 0.6 : 0,
         }}
         transition={{ duration: 0.3 }}
       />
@@ -228,7 +228,7 @@ const SkillLogo = ({
         animate={controls}
         className="relative m-3 z-10 w-16 h-16 flex items-center justify-center text-gray-800"
         whileHover={{
-          filter: ["grayscale(100%)", "grayscale(0%)", "grayscale(100%)"],
+          filter: ["grayscale(0%)", "grayscale(100%)", "grayscale(0%)"],
           transition: { duration: 0.5 },
         }}
       >
@@ -236,7 +236,7 @@ const SkillLogo = ({
       </motion.div>
 
       {/* Skill name with typewriter effect */}
-      <motion.div
+      {/* <motion.div
         initial={{ opacity: 0, width: 0 }}
         animate={{
           opacity: isHovered ? 1 : 0,
@@ -248,7 +248,10 @@ const SkillLogo = ({
         <span className="text-sm font-medium text-gray-700 bg-white px-2 py-1 rounded-md shadow-lg">
           {skill.name}
         </span>
-      </motion.div>
+      </motion.div> */}
+      <div className="mt-2 text-center">
+        <span className="text-base font-medium text-white">{skill.name}</span>
+      </div>
 
       {/* Animated particles */}
       {isHovered && (
