@@ -179,9 +179,15 @@ function HeroGeometric({
             initial="hidden"
             animate="visible"
           >
-            <p className="text-base sm:text-lg md:text-xl text-white/40 mb-8 leading-relaxed font-light tracking-wide max-w-xl mx-auto px-4">
-              Crafting exceptional digital experiences through innovative design
-              and cutting-edge technology.
+            {/* <p className="text-base sm:text-lg md:text-xl text-white/40 mb-8 leading-relaxed font-light tracking-wide max-w-xl mx-auto px-4">
+              Hi, I am a Frontend Developer. I bring designs to life with code.
+            </p> */}
+            <p className="text-center text-transparent bg-clip-text bg-gradient-to-r from-white/80 via-white/85 to-white/70 text-base sm:text-lg md:text-xl max-w-2xl mx-auto font-light tracking-wide animate-gradient">
+              Hi! I'm a{" "}
+              <span className="font-bold text-2xl bg-clip-text text-transparent bg-white">
+                Frontend Developer.
+              </span>{" "}
+              Crafting smooth digital journeys, one interface at a time.
             </p>
           </motion.div>
         </div>

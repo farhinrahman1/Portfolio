@@ -309,16 +309,17 @@ export default function InteractiveAbout() {
                     onMouseLeave={leaveInteractive}
                   >
                     <p className="mb-4">
-                      I specialize in creating modern, scalable web applications
-                      using technologies like React, Next.js, and Tailwind CSS.
-                      My goal is to make the web more accessible and engaging
-                      for users through innovative design and seamless user
-                      interfaces.
+                      I specialize in building modern, scalable online
+                      applications with React, Next.js, and Tailwind CSS. My
+                      goal is to make the web more accessible and entertaining
+                      for people by utilizing innovative design and seamless
+                      user interfaces.
                     </p>
                     <p>
-                      When I'm not coding, you can find me exploring new
-                      technologies, experimenting with design. I'm always eager
-                      to take on new challenges and grow as a developer.
+                      When I'm not coding, you can find me discovering new
+                      technologies and experimenting with design. I am
+                      constantly keen to take on new tasks and advance as a
+                      developer.
                     </p>
                   </motion.div>
                 </div>
