@@ -1,11 +1,6 @@
 "use client";
 import { PointerHighlight } from "@/components/ui/pointer-highlight";
-import {
-  useMotionValueEvent,
-  useScroll,
-  useTransform,
-  motion,
-} from "framer-motion";
+import { useScroll, useTransform, motion } from "framer-motion";
 import React, { useEffect, useRef, useState } from "react";
 
 interface TimelineEntry {
@@ -40,7 +35,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
     >
       <div className="max-w-7xl mx-auto">
         <PointerHighlight>
-          <span className="text-3xl text-transparent bg-gradient-to-r bg-clip-text from-yellow-500 to-yellow-950 hover:from-slate-300 hover:to-slate-800 font-semibold shadow-md hover:bg-yellow-500/40 transition duration-300">
+          <span className="text-3xl text-transparent bg-gradient-to-r bg-clip-text from-yellow-500 to-yellow-950 hover:from-neutral-500 hover:to-neutral-600 font-semibold shadow-md hover:bg-yellow-500/40 transition duration-300">
             Changelog from my journey
           </span>
         </PointerHighlight>

@@ -16,7 +16,6 @@ const CSS3Logo = ({ className }: { className?: string }) => (
     <path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.414z" />
   </svg>
 );
-
 const JavaScriptLogo = ({ className }: { className?: string }) => (
   <svg viewBox="0 0 24 24" className={className} fill="white">
     <path d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z" />
@@ -69,18 +68,6 @@ const GitLogo = ({ className }: { className?: string }) => (
 const GitHubLogo = ({ className }: { className?: string }) => (
   <svg viewBox="0 0 24 24" className={className} fill="white">
     <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
-  </svg>
-);
-
-const NPMLogo = ({ className }: { className?: string }) => (
-  <svg viewBox="0 0 24 24" className={className} fill="white">
-    <path d="M1.763 0C.786 0 0 .786 0 1.763v20.474C0 23.214.786 24 1.763 24h20.474c.977 0 1.763-.786 1.763-1.763V1.763C24 .786 23.214 0 22.237 0zM5.13 5.323l13.837.019-.009 13.836h-3.464l.01-10.382h-3.456L12.04 19.17H5.113z" />
-  </svg>
-);
-
-const PrettierLogo = ({ className }: { className?: string }) => (
-  <svg viewBox="0 0 24 24" className={className} fill="white">
-    <path d="M8.571 23.429A.571.571 0 0 1 8 22.857V1.143a.571.571 0 0 1 .571-.571H9.14a.571.571 0 0 1 .572.571V22.857a.571.571 0 0 1-.572.572zm2.858 0a.571.571 0 0 1-.572-.572V1.143a.571.571 0 0 1 .572-.571h.571a.571.571 0 0 1 .572.571V22.857a.571.571 0 0 1-.572.572zm2.857 0a.571.571 0 0 1-.571-.572V1.143a.571.571 0 0 1 .571-.571H15.43a.571.571 0 0 1 .571.571V22.857a.571.571 0 0 1-.571.572zM.571 1.143a.571.571 0 0 1 .572-.571H2.286a.571.571 0 0 1 .571.571v21.714a.571.571 0 0 1-.571.572H1.143a.571.571 0 0 1-.572-.572zm5.715 0a.571.571 0 0 1 .571-.571h1.143a.571.571 0 0 1 .571.571v21.714a.571.571 0 0 1-.571.572H6.857a.571.571 0 0 1-.571-.572zm11.428 0a.571.571 0 0 1 .572-.571h4.571a.571.571 0 0 1 .572.571v21.714a.571.571 0 0 1-.572.572h-4.571a.571.571 0 0 1-.572-.572zm2.857 0a.571.571 0 0 1 .572-.571H22.286a.571.571 0 0 1 .571.571v21.714a.571.571 0 0 1-.571.572H21.143a.571.571 0 0 1-.572-.572z" />
   </svg>
 );
 
@@ -138,14 +125,12 @@ const frontendSkills = [
   { name: "Framer Motion", component: FramerMotionLogo, delay: 0.5 },
   { name: "Git", component: GitLogo, delay: 0.55 },
   { name: "GitHub", component: GitHubLogo, delay: 0.6 },
-  { name: "NPM", component: NPMLogo, delay: 0.65 },
-  { name: "Prettier", component: PrettierLogo, delay: 0.7 },
   { name: "VS Code", component: VSCodeLogo, delay: 0.75 },
 ];
 
 const backendSkills = [
   { name: "Node.js", component: NodeJSLogo, delay: 0.1 },
-  { name: "Next.js API", component: NextJSLogo, delay: 0.15 },
+  { name: "Next.js", component: NextJSLogo, delay: 0.15 },
   { name: "MongoDB", component: MongoDBLogo, delay: 0.2 },
   { name: "PostgreSQL", component: PostgreSQLLogo, delay: 0.25 },
   { name: "MySQL", component: MySQLLogo, delay: 0.3 },
@@ -236,7 +221,7 @@ const SkillLogo = ({
       </motion.div>
 
       {/* Skill name with typewriter effect */}
-      {/* <motion.div
+      <motion.div
         initial={{ opacity: 0, width: 0 }}
         animate={{
           opacity: isHovered ? 1 : 0,
@@ -248,49 +233,10 @@ const SkillLogo = ({
         <span className="text-sm font-medium text-gray-700 bg-white px-2 py-1 rounded-md shadow-lg">
           {skill.name}
         </span>
-      </motion.div> */}
+      </motion.div>
       <div className="mt-2 text-center">
         <span className="text-base font-medium text-white">{skill.name}</span>
       </div>
-
-      {/* Animated particles */}
-      {isHovered && (
-        <>
-          {[...Array(6)].map((_, i) => (
-            <motion.div
-              key={i}
-              className="absolute w-1 h-1 bg-gray-400 dark:bg-gray-600 rounded-full"
-              initial={{
-                opacity: 0,
-                x: 40,
-                y: 40,
-                scale: 0,
-              }}
-              animate={{
-                opacity: [0, 1, 0],
-                x: [40, 40 + (Math.random() - 0.5) * 100],
-                y: [40, 40 + (Math.random() - 0.5) * 100],
-                scale: [0, 1, 0],
-              }}
-              transition={{
-                duration: 1.5,
-                delay: i * 0.1,
-                ease: "easeOut",
-              }}
-            />
-          ))}
-        </>
-      )}
-
-      {/* Ripple effect */}
-      <motion.div
-        className="absolute inset-0 border-2 border-gray-300 dark:border-gray-600 rounded-2xl"
-        animate={{
-          scale: isHovered ? [1, 1.5] : 1,
-          opacity: isHovered ? [0.5, 0] : 0,
-        }}
-        transition={{ duration: 0.6 }}
-      />
     </motion.div>
   );
 };
@@ -312,7 +258,7 @@ const ToggleButton = ({
     whileHover={{ scale: 1.05 }}
     whileTap={{ scale: 0.95 }}
   >
-    {/* Active background */}
+    {/* Active frontend and backend background */}
     <motion.div
       className="absolute inset-0 bg-black rounded-xl"
       initial={false}
@@ -445,30 +391,6 @@ export default function SkillsSection() {
               </motion.div>
             </motion.div>
           </AnimatePresence>
-        </div>
-        <div className="absolute inset-0 pointer-events-none">
-          {[...Array(8)].map((_, i) => (
-            <motion.div
-              key={i}
-              className="absolute w-2 h-2 bg-gray-300 dark:bg-gray-700 rounded-full opacity-30"
-              animate={{
-                x: [0, 100, -50, 0],
-                y: [0, -100, 50, 0],
-                scale: [1, 1.5, 0.5, 1],
-                opacity: [0.3, 0.7, 0.3],
-              }}
-              transition={{
-                duration: 15 + i * 2,
-                repeat: Number.POSITIVE_INFINITY,
-                delay: i * 2,
-                ease: "linear",
-              }}
-              style={{
-                left: `${10 + i * 10}%`,
-                top: `${20 + (i % 3) * 20}%`,
-              }}
-            />
-          ))}
         </div>
       </div>
     </section>
