@@ -341,12 +341,18 @@ export default function InteractiveAbout() {
               onMouseEnter={enterButton}
               onMouseLeave={leaveInteractive}
             /> */}
-            <MagneticButton
-              icon={<ExternalLink />}
-              label="Resume"
-              onMouseEnter={enterButton}
-              onMouseLeave={leaveInteractive}
-            />
+            <a
+              href="/Farhin_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <MagneticButton
+                icon={<ExternalLink />}
+                label="Resume"
+                onMouseEnter={enterButton}
+                onMouseLeave={leaveInteractive}
+              />
+            </a>
           </div>
         </div>
       </div>
