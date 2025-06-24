@@ -112,7 +112,7 @@ export default function AboutPage() {
                   id="teal-checkbox"
                   type="checkbox"
                   value=""
-                  className="w-4 h-4 accent-teal-500 bg-gray-100 border-gray-300 rounded-sm dark:focus:ring-teal-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                  className="w-4 h-4 accent-teal-500 bg-gray-100 border-gray-300 rounded-sm dark:focus:ring-teal-600 dark:ring-offset-gray-800 focus:ring-2"
                 />
                 <span className="ms-2">
                   Developed a strong understanding of Tailwind CSS for rapid UI
@@ -128,7 +128,7 @@ export default function AboutPage() {
                   id="teal-checkbox"
                   type="checkbox"
                   value=""
-                  className="w-4 h-4 accent-teal-500 bg-gray-100 border-gray-300 rounded-sm dark:focus:ring-teal-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                  className="w-4 h-4 accent-teal-500 bg-gray-100 border-gray-300 rounded-sm dark:focus:ring-teal-600 dark:ring-offset-gray-800 focus:ring-2"
                 />
                 <span className="ms-2">
                   Experience with Git for version control, collaboration, and

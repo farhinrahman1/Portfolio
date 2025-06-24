@@ -10,7 +10,7 @@ export default function HeroSection() {
     console.log(`Done after 10 loops!`);
   };
   return (
-    <div className="relative h-screen min-w-full bg-gray-50 dark:bg-neutral-900 overflow-hidden">
+    <div className="relative h-screen min-w-full bg-gray-50 overflow-hidden">
       <HeroGeometric
         badge="Kokonut UI"
         title1="Elevate Your"

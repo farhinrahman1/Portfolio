@@ -3,12 +3,6 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 
 import { Home, Facebook, Instagram, Twitter, Mail, Github } from "lucide-react";
-import {
-  Dialog,
-  DialogContent,
-  DialogTrigger,
-  DialogTitle,
-} from "@/components/ui/dialog";
 
 const socialIcons = [
   {
@@ -120,34 +114,38 @@ const socialIcons = [
 
 const Header = () => {
   return (
-    <header className="bg-black text-white py-4 fixed w-full top-0 z-50">
-      <nav className="container mx-auto px-4">
-        <ul className="flex justify-center space-x-6">
-          {socialIcons.map(({ Icon, href, label }) => (
+    <div className="overflow-x-hidden">
+      <header className="bg-black text-white py-4 fixed w-full top-0 z-50">
+        <nav className="w-full max-w-full px-4 overflow-x-hidden">
+          <ul className="flex justify-center space-x-6">
+            {socialIcons.map(({ Icon, href, label }) => (
+              <motion.li
+                key={label}
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.95 }}
+                className="overflow-hidden"
+              >
+                <Link href={href} className="block" target="_blank">
+                  {Icon}
+                  <span className="sr-only">{label}</span>
+                </Link>
+              </motion.li>
+            ))}
             <motion.li
-              key={label}
-              whileHover={{ scale: 1.1 }}
+              whileHover={{ scale: 1.15 }}
               whileTap={{ scale: 0.95 }}
+              transition={{ type: "spring", stiffness: 300 }}
+              className="overflow-hidden"
             >
-              <Link href={href} className="block" target="_blank">
-                {Icon}
-                <span className="sr-only">{label}</span>
-              </Link>
+              <Mail
+                href="mailto:farhinrahmanp@gmail.com"
+                className="w-[30px] h-[30px] cursor-pointer"
+              />
             </motion.li>
-          ))}
-          <motion.li
-            whileHover={{ scale: 1.15 }}
-            whileTap={{ scale: 0.95 }}
-            transition={{ type: "spring", stiffness: 300 }}
-          >
-            <Mail
-              href="mailto:farhinrahmanp@gmail.com"
-              className="w-[30px] h-[30px] cursor-pointer"
-            />
-          </motion.li>
-        </ul>
-      </nav>
-    </header>
+          </ul>
+        </nav>
+      </header>
+    </div>
   );
 };
 
