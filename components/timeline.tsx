@@ -29,10 +29,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
   const opacityTransform = useTransform(scrollYProgress, [0, 0.1], [0, 1]);
 
   return (
-    <div
-      className="w-full py-10 bg-black font-sans md:px-10"
-      ref={containerRef}
-    >
+    <div className="w-full py-10 bg-black md:px-10" ref={containerRef}>
       <div className="max-w-7xl mx-auto">
         <PointerHighlight>
           <span className="text-3xl text-transparent bg-gradient-to-r bg-clip-text from-yellow-500 to-yellow-950 hover:from-neutral-500 hover:to-neutral-600 font-semibold shadow-md hover:bg-yellow-500/40 transition duration-300">
