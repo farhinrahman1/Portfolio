@@ -11,8 +11,7 @@ const socialIcons = [
         xmlns="http://www.w3.org/2000/svg"
         x="0px"
         y="0px"
-        width="30"
-        height="30"
+        className="w-6 h-6"
         viewBox="0,0,256,256"
       >
         <g
@@ -46,8 +45,7 @@ const socialIcons = [
         xmlns="http://www.w3.org/2000/svg"
         x="0px"
         y="0px"
-        width="30"
-        height="30"
+        className="w-6 h-6"
         viewBox="0,0,256,256"
       >
         <g
@@ -81,8 +79,7 @@ const socialIcons = [
         xmlns="http://www.w3.org/2000/svg"
         x="0px"
         y="0px"
-        width="30"
-        height="30"
+        className="w-6 h-6"
         viewBox="0,0,256,256"
       >
         <g
@@ -117,7 +114,7 @@ const Header = () => {
     <div className="overflow-x-hidden">
       <header className="bg-black text-white py-4 fixed w-full top-0 z-50">
         <nav className="w-full max-w-full px-4">
-          <ul className="flex justify-center space-x-6">
+          <ul className="flex justify-center flex-wrap gap-x-6 px-4">
             {socialIcons.map(({ Icon, href, label }) => (
               <motion.li
                 key={label}
@@ -139,7 +136,7 @@ const Header = () => {
             >
               <Mail
                 href="mailto:farhinrahmanp@gmail.com"
-                className="w-[30px] h-[30px] cursor-pointer"
+                className="w-6 h-6 cursor-pointer"
               />
             </motion.li>
           </ul>
