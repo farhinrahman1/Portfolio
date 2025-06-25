@@ -113,8 +113,8 @@ const Header = () => {
   return (
     <div className="overflow-x-hidden">
       <header className="bg-black text-white py-4 fixed w-full top-0 z-50">
-        <nav className="w-full max-w-full px-4">
-          <ul className="flex justify-center flex-wrap gap-x-6 px-4">
+        <nav className="w-full max-w-screen px-4 overflow-x-hidden">
+          <ul className="flex justify-center flex-wrap gap-4">
             {socialIcons.map(({ Icon, href, label }) => (
               <motion.li
                 key={label}
