@@ -5,7 +5,9 @@ import { Circle } from "lucide-react";
 import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
 import farhinImage from "../components/farhin1.jpg";
-import { VideoText } from "@/components/magicui/video-text"; // Ensure this file exists or update the path
+// import { VideoText } from "@/components/magicui/video-text"; // Ensure this file exists or update the path
+// Update the path below to the correct relative location of video-text.tsx
+import { VideoText } from "@/components/magicui/video-text";
 
 function ElegantShape({
   className,
@@ -160,8 +162,9 @@ function HeroGeometric({
                   // src="https://cdn.magicui.design/ocean-small.webm"
                   // src="https://cdn.pixabay.com/video/2023/10/01/183107-870151708_large.mp4"
                   // src="https://media.istockphoto.com/id/2161467517/video/satisfaction-document-checklist-database-contract-checkbox-insurance-manager-technology.mp4?s=mp4-640x640-is&k=20&c=gnNqY6yOp39PT9CxuoqDlMkQtzxfHHHMi4703LZ7ZQc="
-                  src="https://cdn.pixabay.com/video/2022/03/16/110942-689510603_large.mp4"
+                  // src="https://cdn.pixabay.com/video/2022/03/16/110942-689510603_large.mp4"
                   // src="https://cdn.pixabay.com/video/2018/12/17/20072-307163785_large.mp4"
+                  src="110942-689510603_large.mp4"
                   fontSize={25}
                   fontWeight="900"
                   fontFamily="monospace"
