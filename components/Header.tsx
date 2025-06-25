@@ -11,7 +11,7 @@ const socialIcons = [
         xmlns="http://www.w3.org/2000/svg"
         x="0px"
         y="0px"
-        className="w-6 h-6"
+        className="w-7 h-7 sm:w-8 sm:h-8 md:w-8 md:h-8 lg:w-9 lg:h-9"
         viewBox="0,0,256,256"
       >
         <g
@@ -45,7 +45,7 @@ const socialIcons = [
         xmlns="http://www.w3.org/2000/svg"
         x="0px"
         y="0px"
-        className="w-6 h-6"
+        className="w-7 h-7 sm:w-8 sm:h-8 md:w-8 md:h-8 lg:w-9 lg:h-9"
         viewBox="0,0,256,256"
       >
         <g
@@ -79,7 +79,7 @@ const socialIcons = [
         xmlns="http://www.w3.org/2000/svg"
         x="0px"
         y="0px"
-        className="w-6 h-6"
+        className="w-7 h-7 sm:w-8 sm:h-8 md:w-8 md:h-8 lg:w-9 lg:h-9"
         viewBox="0,0,256,256"
       >
         <g
@@ -136,7 +136,7 @@ const Header = () => {
             >
               <Mail
                 href="mailto:farhinrahmanp@gmail.com"
-                className="w-6 h-6 cursor-pointer"
+                className="w-7 h-7 sm:w-8 sm:h-8 md:w-8 md:h-8 lg:w-9 lg:h-9 cursor-pointer"
               />
             </motion.li>
           </ul>
