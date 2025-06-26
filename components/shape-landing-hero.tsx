@@ -156,7 +156,7 @@ function HeroGeometric({
             initial="hidden"
             animate="visible"
           >
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 md:mb-8 tracking-tight">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 md:mb-8 tracking-tight -mt-8 md:mt-0">
               <div className="relative h-[200px] w-full overflow-hidden">
                 <VideoText
                   // src="https://cdn.magicui.design/ocean-small.webm"
@@ -185,7 +185,7 @@ function HeroGeometric({
             {/* <p className="text-base sm:text-lg md:text-xl text-white/40 mb-8 leading-relaxed font-light tracking-wide max-w-xl mx-auto px-4">
               Hi, I am a Frontend Developer. I bring designs to life with code.
             </p> */}
-            <p className="text-center text-transparent bg-clip-text bg-gradient-to-r from-white/80 via-white/85 to-white/70 text-base sm:text-lg md:text-xl max-w-2xl mx-auto font-light tracking-wide animate-gradient">
+            <p className="text-center text-transparent bg-clip-text bg-gradient-to-r from-white/80 via-white/85 to-white/70 text-base sm:text-lg md:text-xl max-w-2xl mx-auto font-light tracking-wide animate-gradient -mt-12 md:mt-0">
               I'm a{" "}
               <span className="font-bold text-2xl bg-clip-text text-transparent bg-orange-200">
                 Frontend Developer.
