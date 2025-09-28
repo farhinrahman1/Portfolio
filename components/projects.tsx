@@ -6,27 +6,27 @@ import { ArrowUpRight, ExternalLink, Figma, Code2 } from "lucide-react";
 const projects = [
   {
     id: 1,
-    title: "E-commerce Dashboard",
+    title: "Glassmorphism Card",
     description:
-      "Complete admin dashboard design with advanced analytics and user management features.",
+      "Built a sleek Glassmorphism card component exploring trendy UI design patterns.",
     category: "Design",
     type: "Figma",
     year: "2024",
-    tags: ["UI/UX", "Dashboard", "Analytics"],
-    status: "Live",
-    link: "#",
+    tags: ["UI/UX", "Card", "Design"],
+    status: "Completed",
+    link: "https://www.figma.com/proto/M55iLstAEmwHOCbjNUzhQT/Glassmorphism-Card?node-id=3-26&t=NSsC2suxVwivP19f-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1",
   },
   {
     id: 2,
-    title: "Mobile Banking App",
+    title: "Animated Smartwatch Prototype",
     description:
-      "Intuitive mobile banking interface focusing on accessibility and user experience.",
+      "Created an animated smartwatch prototype to explore wearable UI design and motion-based user interactions.",
     category: "Design",
     type: "Figma",
-    year: "2024",
-    tags: ["Mobile", "Fintech", "UX"],
-    status: "Completed",
-    link: "#",
+    year: "2025",
+    tags: ["Animation", "Prototype", "UX"],
+    status: "Live",
+    link: "https://www.figma.com/proto/fPOvdVSwCyEnrRSyfvmnTK/Watch-animation?node-id=3-77&p=f&t=zmdgtzYjQPUGSq9D-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=3%3A77",
   },
   {
     id: 3,
@@ -42,15 +42,15 @@ const projects = [
   },
   {
     id: 4,
-    title: "SaaS Landing Page",
+    title: "Parallax Scrolling Animation",
     description:
-      "Modern landing page design for a productivity SaaS with conversion optimization.",
+      "Created parallax scrolling animation for a perfume page. Smooth clicks forward, seamless drags back.",
     category: "Design",
     type: "Figma",
-    year: "2023",
-    tags: ["Landing Page", "SaaS", "Conversion"],
+    year: "2025",
+    tags: ["Parallax Scrolling", "Animation", "UX/UI"],
     status: "Live",
-    link: "#",
+    link: "https://www.figma.com/proto/AZnjKLXXCCaKqh3nPGlVAf/Parallax-Perfume-Animation?t=Olgv6FRd9fKOc4C3-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&node-id=54-72&starting-point-node-id=8%3A7",
   },
   {
     id: 5,
@@ -62,18 +62,6 @@ const projects = [
     year: "2023",
     tags: ["Next.js", "Framer Motion", "Portfolio"],
     status: "Live",
-    link: "#",
-  },
-  {
-    id: 6,
-    title: "Design System",
-    description:
-      "Comprehensive design system with components, tokens, and documentation.",
-    category: "Design",
-    type: "Figma",
-    year: "2023",
-    tags: ["Design System", "Components", "Documentation"],
-    status: "Completed",
     link: "#",
   },
 ];
@@ -168,8 +156,11 @@ export function Projects() {
         {/* Projects List with Cards */}
         <div className="space-y-8">
           {filteredProjects.map((project, index) => (
-            <div
+            <a
               key={project.id}
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
               className={`group cursor-pointer transition-all duration-1000 ${
                 isVisible
                   ? "opacity-100 translate-y-0"
@@ -250,7 +241,7 @@ export function Projects() {
                 }`}
                 style={{ transitionDelay: `${650 + index * 100}ms` }}
               ></div>
-            </div>
+            </a>
           ))}
         </div>
 
