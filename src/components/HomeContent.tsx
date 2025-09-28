@@ -6,6 +6,7 @@ import Header from "../../components/Header";
 import Hero from "../../components/Hero";
 import SkillsSection from "../../components/skills-section";
 import About from "../../components/About";
+import { Projects } from "../../components/projects";
 
 const FooterComponent = dynamic(() => import("../../components/footer"), {
   ssr: false,
@@ -25,6 +26,7 @@ export default function HomeContent() {
       <Header />
       <Hero />
       <SkillsSection />
+      <Projects />
       <About />
       <ParticleBackground />
       <FooterComponent />
