@@ -30,12 +30,12 @@ const projects = [
   },
   {
     id: 3,
-    title: "Task Management System",
+    title: "Cartyxor - Multivendor E-commerce Platform",
     description:
-      "React-based task management application with real-time collaboration features.",
+      "React-based e-commerce platform with real-time collaboration features.",
     category: "Development",
     type: "Frontend",
-    year: "2024",
+    year: "2025",
     tags: ["React", "TypeScript", "Real-time"],
     status: "In Progress",
     link: "#",
@@ -59,10 +59,10 @@ const projects = [
       "Personal portfolio website built with Next.js and modern animations.",
     category: "Development",
     type: "Frontend",
-    year: "2023",
+    year: "2025",
     tags: ["Next.js", "Framer Motion", "Portfolio"],
     status: "Live",
-    link: "#",
+    link: "https://farhin.vercel.app/",
   },
 ];
 
