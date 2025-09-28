@@ -266,13 +266,6 @@ export function Projects() {
               dashboards. Currently exploring the intersection of design and
               development.
             </p>
-
-            <div className="mt-8 flex justify-center">
-              <button className="group flex items-center gap-2 text-sm font-medium text-gray-300 hover:text-white transition-colors duration-300">
-                <span>View all projects</span>
-                <ExternalLink className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300" />
-              </button>
-            </div>
           </div>
         </div>
       </div>
