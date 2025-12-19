@@ -6,6 +6,8 @@ import {
   useTransform,
   useInView,
   AnimatePresence,
+  easeIn,
+  easeInOut,
 } from "framer-motion";
 import { useState, useEffect, useRef } from "react";
 import { Code, Lightbulb, Zap, ArrowRight, Quote } from "lucide-react";
@@ -48,7 +50,7 @@ export default function AboutSection() {
       transition: {
         delay: 0.3 + i * 0.2,
         duration: 0.8,
-        ease: [0.215, 0.61, 0.355, 1],
+        ease: easeInOut,
       },
     }),
   };
@@ -60,7 +62,7 @@ export default function AboutSection() {
       y: 0,
       transition: {
         duration: 0.6,
-        ease: [0.215, 0.61, 0.355, 1],
+        ease: easeInOut,
       },
     },
     exit: {
@@ -68,7 +70,7 @@ export default function AboutSection() {
       y: -40,
       transition: {
         duration: 0.6,
-        ease: [0.215, 0.61, 0.355, 1],
+        ease: easeInOut,
       },
     },
   };
@@ -135,7 +137,7 @@ export default function AboutSection() {
             transition={{
               delay: 0.2,
               duration: 0.8,
-              ease: [0.215, 0.61, 0.355, 1],
+              ease: easeInOut,
             }}
             className="relative"
           >
@@ -155,7 +157,7 @@ export default function AboutSection() {
               transition={{
                 delay: 0.3,
                 duration: 0.8,
-                ease: [0.215, 0.61, 0.355, 1],
+                ease: easeInOut,
               }}
               className="md:col-span-2"
             >
