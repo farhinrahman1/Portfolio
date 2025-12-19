@@ -342,7 +342,7 @@ export default function InteractiveAbout() {
               onMouseLeave={leaveInteractive}
             /> */}
             <a
-              href="/Farhin_Resume.pdf"
+              href="/Farhin_Rahman.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >
