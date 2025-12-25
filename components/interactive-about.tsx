@@ -341,7 +341,7 @@ export default function InteractiveAbout() {
               onMouseEnter={enterButton}
               onMouseLeave={leaveInteractive}
             /> */}
-            <a
+            {/* <a
               href="/Farhin_Rahman.pdf"
               target="_blank"
               rel="noopener noreferrer"
@@ -352,6 +352,15 @@ export default function InteractiveAbout() {
                 onMouseEnter={enterButton}
                 onMouseLeave={leaveInteractive}
               />
+            </a> */}
+            <a
+              href="/Farhin_Rahman.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-neutral-800 hover:bg-neutral-700 text-white rounded-full px-6 py-3 flex items-center gap-2"
+            >
+              <ExternalLink />
+              Resume
             </a>
           </div>
         </div>
@@ -379,11 +388,13 @@ export default function InteractiveAbout() {
 function MagneticButton({
   icon,
   label,
+  href,
   onMouseEnter,
   onMouseLeave,
 }: {
   icon: React.ReactNode;
   label: string;
+  href?: string;
   onMouseEnter: () => void;
   onMouseLeave: () => void;
 }) {
@@ -438,4 +449,16 @@ function MagneticButton({
       />
     </motion.button>
   );
+  if (href) {
+    return (
+      <motion.a
+        {...commonProps}
+        href={href}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {content}
+      </motion.a>
+    );
+  }
 }
