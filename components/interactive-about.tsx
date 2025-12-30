@@ -354,7 +354,7 @@ export default function InteractiveAbout() {
               />
             </a> */}
             <a
-              href="/Farhin_Rahman.pdf"
+              href="/FResume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-neutral-800 hover:bg-neutral-700 text-white rounded-full px-6 py-3 flex items-center gap-2"
