@@ -449,16 +449,4 @@ function MagneticButton({
       />
     </motion.button>
   );
-  if (href) {
-    return (
-      <motion.a
-        {...commonProps}
-        href={href}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        {content}
-      </motion.a>
-    );
-  }
 }
