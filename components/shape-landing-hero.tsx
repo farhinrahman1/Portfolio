@@ -70,7 +70,7 @@ function ElegantShape({
             "absolute inset-0 rounded-full",
             "bg-gradient-to-r to-transparent",
             gradient,
-            "backdrop-blur-[2px] border-2 border-white/[0.15]",
+            "backdrop-blur-0 border-2 border-white/[0.15]",
             "shadow-[0_8px_32px_0_rgba(255,255,255,0.1)]",
             "after:absolute after:inset-0 after:rounded-full",
             "after:bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.2),transparent_70%)]"
@@ -174,7 +174,7 @@ function HeroGeometric({
                   fontSize={25}
                   fontWeight="900"
                   fontFamily="monospace"
-                  className="w-full h-full object-contain"
+                  className="w-full h-full object-cover"
                 >
                   Farhin
                 </VideoText>
@@ -192,17 +192,110 @@ function HeroGeometric({
               Hi, I am a Frontend Developer. I bring designs to life with code.
             </p> */}
             <p className="text-center text-transparent bg-clip-text bg-gradient-to-r from-white/80 via-white/85 to-white/70 text-base sm:text-lg md:text-xl max-w-2xl mx-auto font-light tracking-wide animate-gradient -mt-12 md:mt-0">
-              I'm a{" "}
+              {" "}
               <span className="font-bold text-2xl bg-clip-text text-transparent bg-orange-200">
-                Frontend Developer.
+                Frontend Developer • UI/UX • Research-Oriented{" "}
               </span>{" "}
-              Crafting smooth digital journeys, one interface at a time.
+              Designing interactive, performance-focused web experiences
             </p>
           </motion.div>
+
+          {/* How to make the button bottom of the hero section */}
+
+          <div className="flex justify-center mt-10 md:mt-10">
+            <div className="relative flex space-x-6">
+              {/* <motion.a
+                href="#projects"
+                className=" bottom-10 left-1/2 px-4 py-3 bg-orange-200 border-2 border-white/70 hover:bg-orange-300 text-black rounded-full  duration-300 text-base font-medium"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 2.0, duration: 1.0, ease: easeInOut }}
+              >
+                View My Projects
+              </motion.a> */}
+              <motion.a
+                href="#projects"
+                whileHover={{
+                  scale: 1.05,
+                  boxShadow: "0px 0px 25px rgba(255, 200, 150, 0.6)",
+                }}
+                whileTap={{ scale: 0.97 }}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{
+                  opacity: 1,
+                  y: [0, -4, 0], // 👈 floating effect
+                }}
+                transition={{
+                  opacity: { delay: 2.0, duration: 0.8, ease: easeInOut },
+                  y: {
+                    delay: 2.8, // wait until hero settles
+                    duration: 4,
+                    repeat: Infinity,
+                    ease: "easeInOut",
+                  },
+                }}
+                className="group relative overflow-hidden px-6 py-3 bg-orange-200 text-black rounded-full font-medium border border-white/60 flex items-center gap-2"
+              >
+                <span className="relative z-10">View My Projects</span>
+                <span className="relative z-10 transition-transform duration-300 group-hover:translate-x-1">
+                  →
+                </span>
+
+                <span className="absolute inset-0 bg-gradient-to-r from-orange-100 to-orange-300 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              </motion.a>
+
+              {/* resume download button */}
+              {/* <motion.a
+                href="/Farhin_Rahman_Resume.pdf"
+                download
+                className=" bottom-10 right-10 px-4 py-3 bg-transparent border-2 border-white/30 text-white/70 rounded-full hover:bg-white/10 duration-300 font-medium text-base"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 2.2, duration: 1.0, ease: easeInOut }}
+              >
+                Download Resume
+              </motion.a> */}
+              <motion.a
+                href="/Farhin_Rahman_Resume.pdf"
+                download
+                whileHover={{
+                  scale: 1.04,
+                  boxShadow: "0px 0px 18px rgba(255,255,255,0.15)",
+                }}
+                whileTap={{ scale: 0.97 }}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 2.2, duration: 0.8, ease: easeInOut }}
+                className="
+    group relative overflow-hidden
+    px-6 py-3 rounded-full
+    border border-white/30
+    text-white/80 font-medium
+    backdrop-blur-md
+  "
+              >
+                {/* Text */}
+                <span className="relative z-10 flex items-center gap-2">
+                  Download Resume
+                  <span className="transition-transform duration-300 group-hover:translate-y-0.5">
+                    ↓
+                  </span>
+                </span>
+
+                {/* Subtle sheen */}
+                <span
+                  className="
+      absolute inset-0
+      bg-gradient-to-r from-transparent via-white/10 to-transparent
+      -translate-x-full group-hover:translate-x-full
+      transition-transform duration-700
+    "
+                />
+              </motion.a>
+            </div>
+          </div>
         </div>
       </div>
-
-      <div className="absolute inset-0 bg-gradient-to-t from-[#030303] via-transparent to-[#030303]/80 pointer-events-none" />
     </div>
   );
 }
