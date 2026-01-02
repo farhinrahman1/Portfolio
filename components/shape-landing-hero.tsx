@@ -221,27 +221,31 @@ function HeroGeometric({
                 }}
                 whileTap={{ scale: 0.97 }}
                 initial={{ opacity: 0, y: 20 }}
-                animate={{
-                  opacity: 1,
-                  y: [0, -4, 0], // 👈 floating effect
-                }}
-                transition={{
-                  opacity: { delay: 2.0, duration: 0.8, ease: easeInOut },
-                  y: {
-                    delay: 2.8, // wait until hero settles
-                    duration: 4,
-                    repeat: Infinity,
-                    ease: "easeInOut",
-                  },
-                }}
-                className="group relative overflow-hidden px-6 py-3 bg-orange-200 text-black rounded-full font-medium border border-white/60 flex items-center gap-2"
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 2.0, duration: 0.8, ease: easeInOut }}
+                className="
+    group relative overflow-hidden
+    px-6 py-3
+    bg-orange-200 text-black
+    rounded-full font-medium
+    border border-white/60
+    flex items-center gap-2
+  "
               >
                 <span className="relative z-10">View My Projects</span>
+
                 <span className="relative z-10 transition-transform duration-300 group-hover:translate-x-1">
                   →
                 </span>
 
-                <span className="absolute inset-0 bg-gradient-to-r from-orange-100 to-orange-300 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <span
+                  className="
+    absolute inset-0
+    bg-gradient-to-r from-orange-100 to-orange-300
+    opacity-0 group-hover:opacity-100
+    transition-opacity duration-300
+  "
+                />
               </motion.a>
 
               {/* resume download button */}

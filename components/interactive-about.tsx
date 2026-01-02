@@ -52,10 +52,10 @@ export default function InteractiveAbout() {
 
   // Bio text that morphs between different phrases
   const bioVariants = [
-    "A passionate Frontend Developer with over 2 years of experience",
-    "Creating modern, responsive web experiences",
-    "Turning ideas into interactive realities",
-    "Crafting digital experiences that delight users",
+    "Frontend developer crafting interactive, performance-focused web experiences",
+    "Participant in coding competitions with award-winning projects",
+    "Certified in advanced web development and UX courses",
+    "Sharing insights on LinkedIn about innovation and design",
   ];
   const [currentBioIndex, setCurrentBioIndex] = useState(0);
 
@@ -309,11 +309,13 @@ export default function InteractiveAbout() {
                     onMouseLeave={leaveInteractive}
                   >
                     <p className="mb-4">
-                      I specialize in building modern, scalable online
-                      applications with React, Next.js, and Tailwind CSS. My
-                      goal is to make the web more accessible and entertaining
-                      for people by utilizing innovative design and seamless
-                      user interfaces.
+                      I build responsive, modern web applications using React,
+                      Next.js, and Tailwind CSS. My focus is on creating
+                      user-friendly interfaces, optimized performance, and
+                      interactive experiences. Beyond coding, I engage in
+                      competitions, complete advanced courses, and share
+                      insights on LinkedIn to continually refine my skills and
+                      stay at the forefront of technology.
                     </p>
                     <p>
                       When I'm not coding, you can find me discovering new
@@ -322,6 +324,17 @@ export default function InteractiveAbout() {
                       developer.
                     </p>
                   </motion.div>
+                  <div className="flex flex-wrap gap-4 mt-6">
+                    <span className="px-3 py-1 bg-purple-700/20 text-purple-200 rounded-full text-sm font-medium">
+                      Next Gen Ideathon 2025 Finalist
+                    </span>
+                    <span className="px-3 py-1 bg-blue-700/20 text-blue-200 rounded-full text-sm font-medium">
+                      AI Engineering Hackathon Participant
+                    </span>
+                    <span className="px-3 py-1 bg-green-700/20 text-green-200 rounded-full text-sm font-medium hover:bg-green-700/30 transition">
+                      Intra-University Programming Contest Participant
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -353,7 +366,7 @@ export default function InteractiveAbout() {
                 onMouseLeave={leaveInteractive}
               />
             </a> */}
-            <a
+            {/* <a
               href="/FResume_2025.pdf"
               target="_blank"
               rel="noopener noreferrer"
@@ -361,6 +374,39 @@ export default function InteractiveAbout() {
             >
               <ExternalLink />
               Resume
+            </a> */}
+            <a
+              href="/FResume_2025.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="
+    group relative overflow-hidden
+    px-6 py-3 rounded-full
+    border border-white/30
+    text-white/80 font-medium
+    backdrop-blur-md
+    flex items-center gap-2
+    transition-all duration-300
+    hover:border-white/60 hover:text-white
+  "
+            >
+              {/* Text + arrow */}
+              <span className="relative z-10 flex items-center gap-2">
+                Download Resume
+                <span className="transition-transform duration-300 group-hover:translate-x-1">
+                  ↓
+                </span>
+              </span>
+
+              {/* Subtle sheen effect */}
+              <span
+                className="
+    absolute inset-0
+    bg-gradient-to-r from-white/10 via-white/20 to-white/10
+    -translate-x-full group-hover:translate-x-full
+    transition-transform duration-700
+  "
+              />
             </a>
           </div>
         </div>
