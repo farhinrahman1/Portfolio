@@ -5,12 +5,13 @@ import { Timeline } from "../components/timeline";
 import amazonImage from "../components/amazon.png";
 import twitterImage from "../components/twitter.png";
 import githubImage from "../components/github.png";
-import githubImage2024 from "../components/2024-github.png";
-import shadcn from "../components/shadcn.png";
+import github2024 from "../components/github2024.png";
 import code1 from "../components/code1.png";
 import figma1 from "../components/figma1.png";
-import figma2 from "../components/figma2.png";
 import aceternity from "../components/aceternity.png";
+import shadcn from "../components/shadcn.png";
+import ecommercedashboard from "../components/ecommerce-dashboard.png";
+import minimalistportfolio from "../components/minimalist-portfolio-dark-ui.png";
 import dynamic from "next/dynamic";
 
 const About = dynamic(() => import("./About"), { ssr: false });
@@ -31,45 +32,83 @@ const ResponsiveImage = ({ src, alt }: { src: any; alt: string }) => (
 export default function AboutPage() {
   const data = [
     {
-      title: "Frontend Growth 2024",
+      title: "2025 — Systems, Motion & Production-Level Work",
       content: (
         <div>
-          <p className="text-gray-300 lg:text-lg md:text-base font-normal mb-8">
-            This timeline captures my evolution as a frontend developer. With
-            tools like Shadcn UI, Framer Motion, and TypeScript, I’ve pushed my
-            creativity and skills to build polished, responsive interfaces. Each
-            milestone below reflects a step forward in code, design, and
-            passion.
+          <p className="text-gray-300 lg:text-lg md:text-base font-normal mb-4">
+            2025 marked a shift from isolated components to complete systems. I
+            focused on building scalable UI patterns, refined motion behavior,
+            and production-ready frontend architecture.
           </p>
-          <div className="w-full max-w-none flex flex-col items-center justify-center px-0 space-y-6 sm:">
-            <ResponsiveImage src={githubImage2024} alt="2024 Github Image" />
-            <ResponsiveImage src={shadcn} alt="Shadcn UI" />
+
+          <ul className="list-disc pl-5 text-neutral-300 mb-6 space-y-1">
+            <li>Built a full portfolio using Next.js App Router</li>
+            <li>
+              Implemented state-driven UI feedback and conditional rendering for
+              real-time product experiences
+            </li>
+            <li>
+              Building a multi-vendor marketplace where creators can host
+              personalized storefronts and sell digital products
+            </li>
+          </ul>
+          <div className="w-full max-w-none flex flex-col items-center justify-center px-0 space-y-6">
+            <p className="text-sm text-neutral-400 uppercase tracking-widest">
+              Selected Interfaces
+            </p>
+
+            <ResponsiveImage src={minimalistportfolio} alt="Portfolio System" />
+            <ResponsiveImage
+              src={ecommercedashboard}
+              alt="Ecommerce Dashboard"
+            />
+          </div>
+        </div>
+      ),
+    },
+
+    {
+      title: "2024 — Production UI, Motion Systems & Portfolio Engineering",
+      content: (
+        <div>
+          <p className="text-gray-300 lg:text-lg md:text-base font-normal mb-4">
+            2024 focused on building production-level UI systems and advanced
+            animations.
+          </p>
+
+          <ul className="list-disc pl-5 text-neutral-300 mb-6 space-y-1">
+            <li>
+              Transitioned to Next.js App Router and modern project structure
+            </li>
+            <li>Introduced Framer Motion scroll-based animations</li>
+            <li>Adopted Shadcn UI for consistent design systems</li>
+          </ul>
+          <div className="w-full max-w-none flex flex-col items-center justify-center px-0 space-y-6">
+            <ResponsiveImage src={github2024} alt="2024 github" />
+            <ResponsiveImage src={shadcn} alt="2024 github" />
           </div>
         </div>
       ),
     },
     {
-      title: "2023 Frontend Log",
+      title: "2023 — Frontend Transition, Real Projects & UI Exploration",
       content: (
         <div>
-          <p className="text-neutral-300 lg:text-lg md:text-base font-normal mb-8">
-            I focused on frontend development, learning JavaScript, Next.js, and
-            using GitHub to deploy my projects. I explored UI/UX with Figma and
-            gradually moved from basic HTML and CSS to modern tools like Shadcn
-            UI and Framer Motion. TypeScript added structure to my code, while
-            GitHub helped me share and manage my work efficiently.
+          <p className="text-gray-300 lg:text-lg md:text-base font-normal mb-4">
+            This year focused on exploration — experimenting with layouts, UI
+            patterns, and learning by building small but frequent projects.
           </p>
+
           <div className="w-full max-w-none flex flex-col items-center justify-center px-0 space-y-6">
             <ResponsiveImage src={code1} alt="Code Template" />
             <ResponsiveImage src={figma1} alt="Figma Template 1" />
-            <ResponsiveImage src={figma2} alt="Figma Template 2" />
             <ResponsiveImage src={aceternity} alt="Aceternity Template" />
           </div>
         </div>
       ),
     },
     {
-      title: "Growth Log",
+      title: "2022 — Web Fundamentals, Tooling & Learning Phase",
       content: (
         <div>
           <p className="text-neutral-300 lg:text-lg md:text-base font-normal mb-4">
