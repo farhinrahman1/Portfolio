@@ -49,8 +49,8 @@ const projects = [
     year: "2025",
     tags: ["React", "TypeScript", "Real-time"],
     status: "In Progress",
-    image: "/ecommerce-dashboard-ui.png",
-    link: "#",
+    image: "/ecommerce-dashboard.png",
+    link: "https://cartyxor.vercel.app/",
   },
   {
     id: 4,
@@ -75,7 +75,7 @@ const projects = [
     year: "2025",
     tags: ["Next.js", "Framer Motion", "Portfolio"],
     status: "Live",
-    image: "/minimalist-portfolio-dark-ui.jpg",
+    image: "/minimalist-portfolio-dark-ui.png",
     link: "https://farhin.vercel.app/",
   },
   {
