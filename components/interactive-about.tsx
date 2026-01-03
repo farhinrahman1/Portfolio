@@ -342,70 +342,72 @@ export default function InteractiveAbout() {
 
           {/* Magnetic buttons */}
           <div className="flex flex-wrap justify-center gap-4">
-            {/* <MagneticButton
-              icon={<Mail />}
-              label="Contact Me"
-              onMouseEnter={enterButton}
-              onMouseLeave={leaveInteractive}
-            /> */}
-            {/* <MagneticButton
-              icon={<User />}
-              label="Portfolio"
-              onMouseEnter={enterButton}
-              onMouseLeave={leaveInteractive}
-            /> */}
-            {/* <a
-              href="/Farhin_Rahman.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <MagneticButton
-                icon={<ExternalLink />}
-                label="Resume"
-                onMouseEnter={enterButton}
-                onMouseLeave={leaveInteractive}
-              />
-            </a> */}
-            {/* <a
-              href="/FResume_2025.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-neutral-800 hover:bg-neutral-700 text-white rounded-full px-6 py-3 flex items-center gap-2"
-            >
-              <ExternalLink />
-              Resume
-            </a> */}
-
-            <a
-              href="/FResume_2025.pdf"
-              download
-              className="
-    group relative overflow-hidden
-    px-6 py-3 rounded-full
-    border border-white/30
-    text-white/80 font-medium
-    backdrop-blur-md
-    flex items-center gap-2
-    transition-all duration-300
-    hover:border-white/60 hover:text-white
-  "
-            >
-              <span className="relative z-10 flex items-center gap-2">
-                Download Resume
-                <span className="transition-transform duration-300 group-hover:translate-x-1">
-                  ↓
-                </span>
-              </span>
-
-              <span
+            <div className="flex flex-wrap justify-center gap-4 mt-6">
+              {/* View Resume */}
+              <a
+                href="/Farhin_Rahman_Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="
-      absolute inset-0
-      bg-gradient-to-r from-white/10 via-white/20 to-white/10
-      -translate-x-full group-hover:translate-x-full
-      transition-transform duration-700
+      group relative overflow-hidden
+      px-6 py-3 rounded-full
+      border border-white/30
+      text-white/80 font-medium
+      backdrop-blur-md
+      flex items-center gap-2
+      transition-all duration-300
+      hover:border-white/60 hover:text-white
     "
-              />
-            </a>
+              >
+                <span className="relative z-10 flex items-center gap-2">
+                  View Resume
+                  <span className="transition-transform duration-300 group-hover:translate-x-1">
+                    <ExternalLink size={16} />
+                  </span>
+                </span>
+
+                <span
+                  className="
+        absolute inset-0
+        bg-gradient-to-r from-white/10 via-white/20 to-white/10
+        -translate-x-full group-hover:translate-x-full
+        transition-transform duration-700
+      "
+                />
+              </a>
+
+              {/* Download Resume */}
+              <a
+                href="/Farhin_Rahman_Resume.pdf"
+                download
+                className="
+      group relative overflow-hidden
+      px-6 py-3 rounded-full
+      border border-white/30
+      text-white/80 font-medium
+      backdrop-blur-md
+      flex items-center gap-2
+      transition-all duration-300
+      hover:border-white/60 hover:text-white
+    "
+              >
+                <span className="relative z-10 flex items-center gap-2">
+                  Download Resume
+                  <span className="transition-transform duration-300 group-hover:translate-x-1">
+                    ↓
+                  </span>
+                </span>
+
+                <span
+                  className="
+        absolute inset-0
+        bg-gradient-to-r from-white/10 via-white/20 to-white/10
+        -translate-x-full group-hover:translate-x-full
+        transition-transform duration-700
+      "
+                />
+              </a>
+            </div>
           </div>
         </div>
       </div>

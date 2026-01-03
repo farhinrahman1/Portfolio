@@ -204,15 +204,6 @@ function HeroGeometric({
 
           <div className="flex justify-center mt-10 md:mt-10">
             <div className="relative flex space-x-6">
-              {/* <motion.a
-                href="#projects"
-                className=" bottom-10 left-1/2 px-4 py-3 bg-orange-200 border-2 border-white/70 hover:bg-orange-300 text-black rounded-full  duration-300 text-base font-medium"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 2.0, duration: 1.0, ease: easeInOut }}
-              >
-                View My Projects
-              </motion.a> */}
               <motion.a
                 href="#projects"
                 whileHover={{
@@ -241,59 +232,10 @@ function HeroGeometric({
                 <span
                   className="
     absolute inset-0
-    bg-gradient-to-r from-orange-100 to-orange-300
+    bg-gradient-to-r from-orange-200 to-orange-300
     opacity-0 group-hover:opacity-100
     transition-opacity duration-300
   "
-                />
-              </motion.a>
-
-              {/* resume download button */}
-              {/* <motion.a
-                href="/Farhin_Rahman_Resume.pdf"
-                download
-                className=" bottom-10 right-10 px-4 py-3 bg-transparent border-2 border-white/30 text-white/70 rounded-full hover:bg-white/10 duration-300 font-medium text-base"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 2.2, duration: 1.0, ease: easeInOut }}
-              >
-                Download Resume
-              </motion.a> */}
-              <motion.a
-                href="/Farhin_Rahman_Resume.pdf"
-                download
-                whileHover={{
-                  scale: 1.04,
-                  boxShadow: "0px 0px 18px rgba(255,255,255,0.15)",
-                }}
-                whileTap={{ scale: 0.97 }}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 2.2, duration: 0.8, ease: easeInOut }}
-                className="
-    group relative overflow-hidden
-    px-6 py-3 rounded-full
-    border border-white/30
-    text-white/80 font-medium
-    backdrop-blur-md
-  "
-              >
-                {/* Text */}
-                <span className="relative z-10 flex items-center gap-2">
-                  Download Resume
-                  <span className="transition-transform duration-300 group-hover:translate-y-0.5">
-                    ↓
-                  </span>
-                </span>
-
-                {/* Subtle sheen */}
-                <span
-                  className="
-      absolute inset-0
-      bg-gradient-to-r from-transparent via-white/10 to-transparent
-      -translate-x-full group-hover:translate-x-full
-      transition-transform duration-700
-    "
                 />
               </motion.a>
             </div>
