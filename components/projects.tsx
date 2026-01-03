@@ -24,7 +24,7 @@ const projects = [
     tags: ["UI/UX", "Card", "Design"],
     status: "Completed",
     image: "/glassmorphism-ui.png",
-    link: "https://www.figma.com/proto/M55iLstAEmwHOCbjNUzhQT/Glassmorphism-Card?node-id=3-26&p=f&t=dsJ6gsJawv6ZQt7F-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1",
+    link: "https://www.figma.com/proto/M55iLstAEmwHOCbjNUzhQT/Glassmorphism-Card?node-id=3-26&p=f&t=TgXauIvVdo8lRZm5-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1",
   },
   {
     id: 2,
@@ -36,8 +36,8 @@ const projects = [
     year: "2025",
     tags: ["Animation", "Prototype", "UX"],
     status: "Live",
-    video: "/smartwatch-prototype.mp4",
-    link: "https://www.figma.com/proto/fPOvdVSwCyEnrRSyfvmnTK/Smartwatch-animation?t=HW3cI4dQeNqyxDed-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&node-id=3-77&starting-point-node-id=3%3A77",
+    image: "/smartwatch-prototype.png",
+    link: "https://www.figma.com/proto/fPOvdVSwCyEnrRSyfvmnTK/Smartwatch-animation?t=azE7Kgwra7pHb2R5-1",
   },
   {
     id: 3,
@@ -62,8 +62,8 @@ const projects = [
     year: "2025",
     tags: ["Parallax", "Animation", "UX/UI"],
     status: "Live",
-    image: "/perfume-website-design.jpg",
-    link: "https://www.figma.com/proto/AZnjKLXXCCaKqh3nPGlVAf/Parallax-Perfume-Animation?t=Olgv6FRd9fKOc4C3-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&node-id=54-72&starting-point-node-id=8%3A7",
+    image: "/perfume-website-design.png",
+    link: "https://www.figma.com/proto/fPOvdVSwCyEnrRSyfvmnTK/Smartwatch-animation?t=edF8AuKIqsyPQwHD-1&node-id=3-77&starting-point-node-id=3%3A77&scaling=scale-down&content-scaling=fixed",
   },
   {
     id: 5,
@@ -77,6 +77,19 @@ const projects = [
     status: "Live",
     image: "/minimalist-portfolio-dark-ui.jpg",
     link: "https://farhin.vercel.app/",
+  },
+  {
+    id: 6,
+    title: "Parcel Tracking",
+    description:
+      "Designed dynamic ETA and pricing feedback to reduce user anxiety after request confirmation",
+    category: "Design",
+    type: "Figma",
+    year: "2025",
+    tags: ["Single Page", "Animation", "UX/UI"],
+    status: "Live",
+    image: "/parcel-tracking.png",
+    link: "https://www.figma.com/proto/8Dwv5mZn0i7ODPvnnVvh9f/Parcel-Tracking?t=5Hne20N4iWIxDpf1-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&node-id=2-3&starting-point-node-id=2%3A3",
   },
 ];
 
