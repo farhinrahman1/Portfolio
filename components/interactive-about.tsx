@@ -375,10 +375,10 @@ export default function InteractiveAbout() {
               <ExternalLink />
               Resume
             </a> */}
+
             <a
               href="/FResume_2025.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
+              download
               className="
     group relative overflow-hidden
     px-6 py-3 rounded-full
@@ -390,7 +390,6 @@ export default function InteractiveAbout() {
     hover:border-white/60 hover:text-white
   "
             >
-              {/* Text + arrow */}
               <span className="relative z-10 flex items-center gap-2">
                 Download Resume
                 <span className="transition-transform duration-300 group-hover:translate-x-1">
@@ -398,14 +397,13 @@ export default function InteractiveAbout() {
                 </span>
               </span>
 
-              {/* Subtle sheen effect */}
               <span
                 className="
-    absolute inset-0
-    bg-gradient-to-r from-white/10 via-white/20 to-white/10
-    -translate-x-full group-hover:translate-x-full
-    transition-transform duration-700
-  "
+      absolute inset-0
+      bg-gradient-to-r from-white/10 via-white/20 to-white/10
+      -translate-x-full group-hover:translate-x-full
+      transition-transform duration-700
+    "
               />
             </a>
           </div>
