@@ -63,7 +63,7 @@ const projects = [
     tags: ["Parallax", "Animation", "UX/UI"],
     status: "Live",
     image: "/perfume-website-design.png",
-    link: "https://www.figma.com/proto/fPOvdVSwCyEnrRSyfvmnTK/Smartwatch-animation?t=edF8AuKIqsyPQwHD-1&node-id=3-77&starting-point-node-id=3%3A77&scaling=scale-down&content-scaling=fixed",
+    link: "https://www.figma.com/proto/AZnjKLXXCCaKqh3nPGlVAf/Parallax-Perfume-Animation?node-id=54-72&p=f&t=guIJ6iMlzI9ySw7e-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=8%3A7",
   },
   {
     id: 5,
